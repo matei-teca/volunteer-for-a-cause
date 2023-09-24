@@ -1,0 +1,403 @@
+
+.textStyle{
+    font-family:'Roboto',sans-serif;
+    font-weight: 300;
+}
+
+/* START START START
+HEADER HEADER HEADER */
+
+.logo {
+    border: solid 0px #EDC339;
+    transition: border 1s;
+    z-index: 50;
+}
+
+.logo:hover {
+    border: solid 4px #EDC339;
+    transition: border 1s
+}
+
+.logoAfter {
+    opacity: 0.3;
+    transition: 1s;
+}
+
+.video_header {
+    position: relative;
+    border-radius: 505%;
+}
+
+.video_container {
+    opacity: 0;
+}
+
+.video_containerAfter {
+    opacity: 0;
+    transition: 1s;
+}
+
+
+.video_containerAfter:hover {
+    opacity: 0.9;
+    transition: 1s;
+
+}
+
+/* END END END
+HEADER HEADER HEADER */
+
+
+
+/* START START START
+WELCOME WELCOME WELCOME */
+
+#sectionA {
+    height: 0px;
+    width: 120px;
+    padding: 0px;
+    transition: 0s 180s;
+    border: 5px solid black;
+
+}
+
+#sectionAText {
+    opacity: 0;
+    transition: 0s 180s
+
+}
+
+/* END END END
+WELCOME WELCOME WELCOME */
+
+.main_background {
+    background-image: url("../img/main-background.jpeg");
+    background-attachment: fixed;
+    background-position: center
+}
+
+/* START START START
+BUTTONS BUTTONS BUTTONS */
+
+.logOutBttn {
+    display: inline-block;
+    padding: 0.3em 1.2em;
+    margin:0 0.3em 0.3em 0;
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight: 300;
+    color:#FFFFFF;
+    background-color:#EDC339;
+    text-align:center;
+    transition: all 0.2s;
+    width: 150px;
+    height: 50px;
+    font-size: large;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    cursor:pointer;
+    border: 1px solid #4095c6
+
+}
+
+.logOutBttn:hover{
+    background-color:#4095c6;
+    border: 1px solid #EDC339
+}
+
+.logInBttn {
+    display: inline-block;
+    padding: 0.6em 1.2em;
+    margin:0 0.3em 0.3em 0;
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight: 300;
+    color:#FFFFFF;
+    background-color: rgba(237, 195, 57, 0.9);
+    text-align:center;
+    transition: all 0.2s;
+    width: 150px;
+    height: 70px;
+    font-size: large;
+    /* margin: 0px 30px;
+    margin-top: 35px; */
+    cursor:pointer;
+    border: 1px solid #4095c6;
+
+}    
+
+
+.logInBttn:hover{
+    background-color:#4095c6;
+    border: 1px solid #EDC339
+}
+
+/* END END END
+BUTTONS BUTTONS BUTTONS */
+
+
+
+/* START START START
+LOGGEDINV LOGGEDINV LOGGEDINV */
+
+.loggedIn_containerA {
+    opacity: 0;
+    transition: 0s 180s;
+
+}
+
+.loggedIn_containerA:hover {
+    opacity: 1;
+    transition: opacity 1s ease-in 0.6s;
+}
+
+.loggedIn_containerB{
+    background-size: 50%;
+    transition: 1s;
+
+}
+
+.loggedIn_containerBAfter{
+    background-size: 0%;
+    transition: 1s
+}
+
+.video_title1{
+    background-color: red;
+    position: absolute;
+    border-radius: 100%;
+    height: 800px;
+    bottom: -70%;
+
+    /* todo: make video show at some point */
+    display: none; 
+    transition: 1s;
+    cursor: pointer;
+
+}
+
+.video_title1After{
+    position: absolute;
+    border-radius: 100%;
+    height: 800px;
+    bottom: -70%;
+    /* display: inline; */
+    transition: 1s;
+
+}
+
+.video_title1After:hover{
+    opacity: 1;
+    transition: 1s
+
+}
+
+.title1{
+    z-index: 50;
+    border: solid 0px #01577D;
+    transition: border 1s linear;
+    opacity: 1;
+    transition: 1s;
+    cursor: default;
+}
+
+.title1After{
+    z-index: 50;
+    opacity: 0.1;
+    transition: 1s;
+
+}
+
+.title1Section{
+    font-size: 10px;
+    transition: all 1s;
+
+}
+
+.title1SectionText{
+    opacity: 0;
+    transition:all 3s
+}
+
+.title1SectionTextHover{
+    opacity: 0;
+    transition: all 3s;
+    color: black;
+    transition: color 6s;
+
+}
+
+
+
+.title2{
+    border: solid 1px rgba(0,0,0,0);
+    color: black;
+    transition: all 1s linear;
+    /* transition: all 0.1s linear */
+}
+
+
+
+.title2:hover{
+    border: solid 1px #EDC339;
+    color: white;
+    transition: all 1s linear;
+    /* transition: all 0.1s linear */
+
+}
+
+.llwl {
+    opacity: 0;
+    transition: all 1s linear
+
+}
+
+
+.title2:hover .llwl{
+    opacity: 1;
+    transition: all 3s linear
+}
+
+.formV{
+    margin-top: 100px;
+    background-color: rgba(0,0,0,0);
+    color: black;
+    border: 3px solid #EDC339;
+    transition: all 1s;
+    border-radius: 5% 5% 5% 5%;
+
+
+}
+
+.formV:hover{
+    /* background-color: #01577D; */
+    color: white;
+    border: 1px solid #EDC339;
+    transition: all 1s
+}
+
+.formV:hover .submitBttn{
+    /* background-color: rgba(237, 195, 57, 0.9); */
+    color: white;
+    transition: color 1s
+
+}
+
+.input_wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 25px
+}
+
+.submitBttn {
+    display: inline-block;
+    padding: 0.6em 1.2em;
+    margin:0 0.3em 0.3em 0;
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight: 300;
+    transition: color 1s;
+    color: black;
+    
+    background-color: transparent;
+
+    text-align:center;
+    /* transition: all 0.2s; */
+    width: 100px;
+    height: 45px;
+    font-size: large;
+    /* margin: 0px 30px;
+    margin-top: 35px; */
+    cursor:pointer;
+    border: 1px solid #4095c6;
+
+}    
+
+
+.submitBttn:hover{
+    background-color:#4095c6;
+    border: 1px solid #EDC339
+}
+
+
+
+/* END END END
+LOGGEDINV LOGGEDINV LOGGEDINV */
+
+
+
+/* START START START
+FOOTER FOOTER FOOTER */
+
+.footer_container {
+    border: 1px solid black;
+    transition: border 1s;
+    background-color: rgba(0,0,0,0.7);
+    background-blend-mode: darken;
+    /* background-attachment: fixed; */
+    /* background-position: 90% */
+
+}
+
+.footer_container:hover {
+    border: 1px solid #EDC339;
+    transition: border 1s
+}
+
+.footer_sectionA {
+    transition: all 3s;
+    height: 0px;
+    width: 120px;
+    padding: 0px;
+    border: 5px solid #01577D
+
+}
+    
+.footer_sectionA:hover {
+    transition: all 1s;
+    height: 10px;
+    width: 220px;
+    padding: 30px;
+    border: 5px solid #EDC339;
+
+    cursor:default
+
+}
+    
+.footer_sectionAText {
+    transition: all 0.3s;
+    opacity: 0;
+
+}
+    
+.footer_sectionA:hover .footer_sectionAText{
+    opacity: 1;
+    transition: opacity 2s ease-in 0.6s;
+
+}
+    
+.footer_sectionBa, .footer_sectionBb, .footer_sectionBc {
+    border: 2px solid #227AA1;
+    text-decoration: none;
+    color: white
+
+
+}
+    
+.footer_sectionBa:hover, .footer_sectionBb:hover, .footer_sectionBc:hover {
+    border: 2px solid #EDC339;
+    cursor:pointer;
+    /* color: #EDC339; */
+
+}
+
+/* END END END
+FOOTER FOOTER FOOTER */
