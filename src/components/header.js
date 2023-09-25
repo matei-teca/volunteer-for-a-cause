@@ -61,26 +61,8 @@ function Header(){
     var logo = document.getElementById("logoId");
 
     const [played, setPlayed] = useState(false);
-    
-    //   videoContainer.addEventListener('mouseenter', e => {
-    //     video.play()
-    //   });
-    
-    // videoContainer.addEventListener('mouseleave', e => {
-    //     video.pause()
-    //   });
-    
-    
-    function test(){
-        console.log("testWorks")
-    }
 
     function showVideo(){
-        // videoContainer.classList.add("video_containerAfter");
-   
-    //    video.play();
-    //    video2.play();
-    //    video3.play();
        videoContainer.classList.add("video_containerAfter");
        videoContainer.classList.remove("video_container");
 
@@ -89,10 +71,7 @@ function Header(){
     }
 
     function hideVideo(){
-        // video.pause();
-        // video2.pause();
         logo.classList.toggle("logoAfter");
-        // video3.pause()
      }
 
 
@@ -104,8 +83,6 @@ function Header(){
         } else{
             video.play();
         }
-
-        
      }
 
      function playVideo2(){
@@ -116,8 +93,6 @@ function Header(){
         } else{
             video2.play();
         }
-
-        
      }
 
     return(
