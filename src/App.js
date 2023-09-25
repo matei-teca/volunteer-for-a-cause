@@ -6,6 +6,7 @@ import LegalPage from "./pages/legalPage";
 import Footer from "./components/footer";
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
+// testing
 function App() {
   return (
     // <HomePage/>
