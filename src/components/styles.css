@@ -52,7 +52,14 @@ HEADER HEADER HEADER */
 /* START START START
 WELCOME WELCOME WELCOME */
 
-#sectionA {
+#welcome_container {
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:5%;
+    border-radius:10;
     height: 0px;
     width: 120px;
     padding: 0px;
@@ -61,7 +68,7 @@ WELCOME WELCOME WELCOME */
 
 }
 
-#sectionAText {
+#welcome_text {
     opacity: 0;
     transition: 0s 180s
 
