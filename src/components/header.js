@@ -30,7 +30,7 @@ function Header(){
             height: 320,    
             padding: 30,
             paddingTop: 0,
-            backgroundImage: `url("https://destinations.com.ua/storage/shares/12_2018_01/NationalSymbols/Depositphotos_46882449_m-2015.jpg")`,
+            // backgroundImage: `url("https://destinations.com.ua/storage/shares/12_2018_01/NationalSymbols/Depositphotos_46882449_m-2015.jpg")`,
             backgroundSize: "50%",
             border: "3px solid #EDC339",
             borderRadius: "5% 5% 5% 5%"

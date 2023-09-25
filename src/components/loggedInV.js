@@ -196,8 +196,7 @@ function LogInV(){
             Proin convallis arcu sed fermentum feugiat. Curabitur volutpat dui in justo vulputate scelerisque. 
             Nulla non dui at purus scelerisque mollis et ac sapien. Pellentesque ultricies ante a metus sagittis feugiat. 
             Pellentesque convallis risus nisi, ut ornare orci ullamcorper vitae. Phasellus venenatis ullamcorper mauris, quis tristique libero ullamcorper non. 
-            Mauris euismod imperdiet felis id feugiat. Nulla rutrum eros sed tortor fringilla fringilla. Nulla finibus lorem non ipsum luctus commodo. 
-            Donec iaculis lorem eros, quis ultricies quam ultrices id.
+            Mauris euismod imperdiet felis id feugiat. 
 
           </p>
           <p className="title1SectionText" id="title1SectionText2">

@@ -26,7 +26,7 @@ function Footer(){
             alignItems: "center",
             width: "99%",
             height: 390,
-            backgroundImage: `url("https://foreignpolicy.com/wp-content/uploads/2022/02/Poland-Ukraine-Russia-crisis-GettyImages-1238647296.jpg?w=1500")`,
+            // backgroundImage: `url("https://foreignpolicy.com/wp-content/uploads/2022/02/Poland-Ukraine-Russia-crisis-GettyImages-1238647296.jpg?w=1500")`,
             backgroundSize: "75%",
             // border: "1px solid #EDC339",
             // borderBottom: "none",
