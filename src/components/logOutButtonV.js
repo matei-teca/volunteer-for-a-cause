@@ -12,7 +12,7 @@ function LogOutButtonV(){
   
 
     return(
-        <button className="logOutBttn" onClick ={() => {dispatch(signInV()); localStorage.signedIn = !isLogged;}}>
+        <button className="logOut_bttn" onClick ={() => {dispatch(signInV()); localStorage.signedIn = !isLogged;}}>
         Log out</button>
     )
 }
