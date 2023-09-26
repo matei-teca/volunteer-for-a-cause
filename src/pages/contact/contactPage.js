@@ -2,42 +2,9 @@
 import React, {useRef, useState} from "react";
 import Header from "../components/header";
 import Footer from "../components/footer";
-
+import "./contactPage.css";
 
 function ContactPage() {
-
-  const styles = {
-    container: {
-      backgroundColor: "#227AA1",
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-      paddingLeft: 300,
-      paddingRight: 300,
-      paddingTop: 30,
-      paddingBottom: 30
-    },
-
-    formContainer: {
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-      padding: 30
-    },
-
-    formElem: {
-      padding: 10
-    },
-
-    formElemBttn: {
-      padding: 10,
-      display: "flex",
-      // alignItems: "center",
-      justifyContent: "center"
-    }
-
-
-  };
 
   const [submitted, setSubmitted] = useState(false);
   const handleSubmit = () => {
@@ -61,30 +28,29 @@ function ContactPage() {
     <div>
       <Header/>
       
-    <div style = {styles.container}>
+    <div className="container">
     
         <h1>Welcome to the CONTACT Page</h1>
     </div>
 
-    <div style = {styles.formContainer}>
+    <div className="form_container">
     <form
       action={FORM_ENDPOINT}
       onSubmit={handleSubmit}
       method="POST"
       target="_blank"
-      style = {styles.form}
       
     >
-      <div style = {styles.formElem}>
+      <div className="form_section">
         <input type="text" placeholder="Your name" name="name" required />
       </div>
-      <div style = {styles.formElem}>
+      <div className="form_section">
         <input type="email" placeholder="Email" name="email" required />
       </div>
-      <div style = {styles.formElem}>
+      <div className="form_section">
         <textarea placeholder="Your message" name="message" required />
       </div>
-      <div style = {styles.formElemBttn}>
+      <div className="form_button_section">
         <button type="submit"> Send a message </button>
       </div>
     </form>
