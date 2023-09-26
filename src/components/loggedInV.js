@@ -3,106 +3,7 @@ import { useState } from 'react';
 import './styles.css';
 import { scroller } from "react-scroll";
 
-
-
 function LogInV(){
-
-    const styles = {
-
-        containerA:{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "space-between",
-            alignItems: "center",
-
-        },
-
-        containerB:{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-            padding: 10,
-            // backgroundImage: `url("https://i.insider.com/622133bf04579d001893ebea?width=1136&format=jpeg")`,
-            width: "60%",
-            height: 500,
-            // backgroundSize: "50%",
-            // backgroundColor: "green",
-            // borderRadius: "50%"
-
-        },
-
-        title1: {
-            // backgroundColor: "#EDC339",
-            color: "white",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "space-between",
-            alignItems: "center",
-            padding: 0,
-            marginTop: "25%",
-            marginBottom: 145,
-            width: 800,
-            borderRadius: 10
-
-
-        },
-
-        title2: {
-            // backgroundColor: "#01577D",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "space-between",
-            alignItems: "center",
-            padding: 60,
-            marginTop: "5%",
-            marginBottom: 50,
-            width: 800,
-            borderRadius: 10,
-            opacity: 1,
-            cursor: "pointer"
-
-
-        },
-
-        form_container: {
-            // backgroundColor: "#EDC339",
-            display: "flex",
-            flexDirection: "column",
-            // justifyContent: "space-between",
-            alignItems: "center",
-            padding: 50,
-            width: "30%",
-            height: 350,
-            marginBottom: 30,
-            // border: '10px solid #01577D',
-
-        },
-
-        formA: {
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-            marginTop: 50
-        },
-
-        formA1: {
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-            marginTop: 0
-        },
-
-        formA2: {
-            marginTop: 10,
-            padding: 7
-        }
-        
-
-        
-    }
 
     const [name, setName] = useState("");
     const [contact, setContact] = useState("");
@@ -181,10 +82,10 @@ function LogInV(){
       };
 
     return(
-        <div style={styles.containerA} className="loggedIn_containerA">
-        <div style={styles.containerB} className="loggedIn_containerB" id="loggedIn_containerBId" >
+        <div className="loggedIn_containerA">
+        <div className="loggedIn_containerB" id="loggedIn_containerBId" >
         
-        <article style={styles.title1} id="title1Id" className="title1" onMouseEnter={title1TextAnimation} >
+        <article id="title1Id" className="title1" onMouseEnter={title1TextAnimation} >
             
             <h1 className="textStyle title1Section" id="title1Section">
                 Bine ai venit!
@@ -218,7 +119,7 @@ function LogInV(){
         </div>
 
       
-        <section style={styles.title2} className="title2" onClick={scrollToSection} onMouseEnter={changeTextColor} onMouseLeave={rechangeTextColor}>
+        <section className="title2" onClick={scrollToSection} onMouseEnter={changeTextColor} onMouseLeave={rechangeTextColor}>
 
         <p className="llwl">
               <abbr>LLWL</abbr> (Live a life worth living!)
@@ -234,29 +135,29 @@ function LogInV(){
         </section>
 
 
-        <article style = {styles.form_container} className="formV">
-        <form className="textStyle \"  onSubmit = {() => alert("your answer was succesfully submited")}>
-      <label style = {styles.formA1}>Enter your name:
+        <article className="formV">
+        <form className="textStyle"  onSubmit = {() => alert("your answer was succesfully submited")}>
+      <label className="form_section1">Enter your name:
         <input
-        style = {styles.formA2}
+        className="form_input"
           type="text" 
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
       </label>
 
-      <label style = {styles.formA}>Phone / email:
+      <label className="form_section">Phone / email:
         <input
-        style = {styles.formA2}
+        className="form_input"
           type="text" 
           value={contact}
           onChange={(e) => setContact(e.target.value)}
         />
       </label>
 
-      <label style = {styles.formA}>Time when available
+      <label className="form_section">Time when available
         <input
-        style = {styles.formA2}
+        className="form_input"
           type="text" 
           value={time}
           onChange={(e) => setTime(e.target.value)}

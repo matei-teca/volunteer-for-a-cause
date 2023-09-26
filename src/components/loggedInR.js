@@ -64,7 +64,7 @@ function LogInR(){
     const [orgName, setOrgName] = useState("");
 
     return(
-        <div style={styles.containerA} className="loggedIn">
+        <div style={styles.containerA}>
         <div style={styles.containerB}>
         <div style={styles.title}>
             
