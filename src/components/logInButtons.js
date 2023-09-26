@@ -13,25 +13,9 @@ function LogInButtons(props){
     const isLoggedR = useSelector(state => state.isLoggedR);
   
     const dispatch = useDispatch();
-  
-
-    const styles = {
-      bttnsContainer:{
-        display: "flex",
-        flexDirection: "row",
-        justifyContent: "space-around",
-        alignItems: "center",
-        // backgroundColor: "green",
-        padding: 20,
-        marginTop: 35,
-        width: 500
-      },
-    }
-
-    
 
     return(
-        <div style = {styles.bttnsContainer}> 
+        <div className="bttns_container"> 
           <button className="logInBttn" onClick ={() => { props.scrollToSection(); dispatch(signInV()); localStorage.signedIn = !isLogged;}}>
           Log in as volunteer</button>
           <button className="logInBttn" onClick ={() => { props.scrollToSection(); dispatch(signInR()); localStorage.signedIn = !isLogged;}}>

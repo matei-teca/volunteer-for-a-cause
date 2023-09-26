@@ -119,6 +119,16 @@ WELCOME WELCOME WELCOME */
 /* START START START
 BUTTONS BUTTONS BUTTONS */
 
+.bttns_container {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+    padding:20px;
+    margin-top:15px;
+    width:500px;
+}
+
 .logOutBttn {
     display: inline-block;
     padding: 0.3em 1.2em;
