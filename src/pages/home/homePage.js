@@ -1,16 +1,17 @@
 
 import React, {useRef} from "react";
 import { useDispatch, useSelector } from "react-redux";
-import LogInV from "../components/loggedInV";
-import LogInR from "../components/loggedInR";
-import { increment, decrement, signIn, reset, signInV, signInR } from "../redux/actions";
-import Welcome from "../components/welcome";
-import Header from "../components/header";
-import Footer from "../components/footer";
-import LogInButtons from "../components/logInButtons";
-import LogOutButtonV from "../components/logOutButtonV";
-import LogOutButtonR from "../components/logOutButtonR";
+import LogInV from "../../components/loggedInV";
+import LogInR from "../../components/loggedInR";
+import { increment, decrement, signIn, reset, signInV, signInR } from "../../redux/actions";
+import Welcome from "../../components/welcome";
+import Header from "../../components/header";
+import Footer from "../../components/footer";
+import LogInButtons from "../../components/logInButtons";
+import LogOutButtonV from "../../components/logOutButtonV";
+import LogOutButtonR from "../../components/logOutButtonR";
 import { scroller } from "react-scroll";
+import "./homePage.css";
 
 
 function HomePage() {
@@ -21,23 +22,6 @@ function HomePage() {
 
   const dispatch = useDispatch();
 
-  const styles = {
-    container: {
-      // backgroundColor: "#227AA1",
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "space-between",
-      alignItems: "center",
-      paddingLeft: 300,
-      paddingRight: 300,
-      paddingTop: 30,
-      paddingBottom: 30,
-      borderRadius: "1%",
-      marginBottom: 1,
-      fontSize: 20
-    },
-
-  };
   // const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetBottom) 
 
   // const myRef = useRef(null);
@@ -55,12 +39,11 @@ function HomePage() {
 
   return (
     <body className = "main_background">
-      <Header/>
-      
-    <section style = {styles.container} >
-    
-      
 
+    <Header/>
+      
+    <section className="homePage_container">
+    
       {!isLoggedV && !isLoggedR ? <Welcome/> : ""}
      
         {isLoggedV ? 
@@ -79,13 +62,9 @@ function HomePage() {
 
     </section>
 
-
-
     <Footer/>
 
     </body>
-
-
   );
 }
 
