@@ -2,7 +2,7 @@
 import React, {useRef} from "react";
 import { useDispatch, useSelector } from "react-redux";
 import LogInV from "../../components/loggedInV";
-import LogInR from "../../components/loggedInR";
+import LogInR from "../../components/loggedInR/loggedInR";
 import { increment, decrement, signIn, reset, signInV, signInR } from "../../redux/actions";
 import Welcome from "../../components/welcome";
 import Header from "../../components/header/header";

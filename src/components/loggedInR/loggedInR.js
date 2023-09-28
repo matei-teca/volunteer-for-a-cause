@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from 'react'; 
-
+import '../styles.css';
+import './loggedInR.css';
 
 function LogInR(){
 
