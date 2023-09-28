@@ -1,7 +1,7 @@
 
 import HomePage from "./pages/homePage";
 import ContactPage from "./pages/contact/contactPage";
-import ErrorPage from "./pages/errorPage";
+import ErrorPage from "./pages/error/errorPage";
 import LegalPage from "./pages/legalPage";
 import Footer from "./components/footer";
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
