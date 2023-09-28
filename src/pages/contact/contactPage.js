@@ -1,7 +1,7 @@
 
 import React, {useRef, useState} from "react";
-import Header from "../components/header";
-import Footer from "../components/footer";
+import Header from "../../components/header";
+import Footer from "../../components/footer";
 import "./contactPage.css";
 
 function ContactPage() {
