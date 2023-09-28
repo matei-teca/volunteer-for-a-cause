@@ -13,7 +13,6 @@ import LogOutButtonR from "../../components/logOutButtonR";
 import { scroller } from "react-scroll";
 import "./homePage.css";
 
-
 function HomePage() {
   const counter = useSelector(state => state.counter);
   const isLogged = useSelector(state => state.isLogged);
@@ -21,13 +20,6 @@ function HomePage() {
   const isLoggedR = useSelector(state => state.isLoggedR);
 
   const dispatch = useDispatch();
-
-  // const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetBottom) 
-
-  // const myRef = useRef(null);
-  // const executeScroll = () => scrollToRef(myRef)
-
-  // var checkIsLogged = localStorage.signedIn;
 
   const scrollToSection = () => {
     scroller.scrollTo("test", {
@@ -54,7 +46,6 @@ function HomePage() {
 
         {!isLoggedV && !isLoggedR ? 
         <LogInButtons scrollToSection={scrollToSection}/> : ""}
-
 
       {isLoggedV ? <LogInV  /> : ""}
       {isLoggedR ? <LogInR /> : ""}
