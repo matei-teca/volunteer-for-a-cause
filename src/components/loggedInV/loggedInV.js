@@ -1,7 +1,8 @@
 import React from "react";
 import { useState } from 'react'; 
-import './styles.css';
 import { scroller } from "react-scroll";
+import './loggedInV.css';
+import '../styles.css';
 
 function LogInV(){
 
@@ -113,7 +114,7 @@ function LogInV(){
         </article>
 
         <video width="80%" height="350" className="video_title1"  id="video_title1Id" onMouseEnter={showVideo} onMouseLeave={hideVideo} controls>
-                <source src={require('../videos/video_header.mp4')} type="video/mp4"/>
+                <source src={require('../..//videos/video_header.mp4')} type="video/mp4"/>
 
             </video>
         </div>
