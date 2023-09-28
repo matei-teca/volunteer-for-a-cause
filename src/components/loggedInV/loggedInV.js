@@ -138,6 +138,7 @@ function LogInV(){
 
         <article className="formV">
         <form className="textStyle"  onSubmit = {() => alert("your answer was succesfully submited")}>
+      
       <label className="form_section1">Enter your name:
         <input
         className="form_input"
