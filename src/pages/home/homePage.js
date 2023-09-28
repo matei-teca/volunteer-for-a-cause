@@ -6,7 +6,7 @@ import LogInR from "../../components/loggedInR";
 import { increment, decrement, signIn, reset, signInV, signInR } from "../../redux/actions";
 import Welcome from "../../components/welcome";
 import Header from "../../components/header";
-import Footer from "../../components/footer";
+import Footer from "../../components/footer/footer";
 import LogInButtons from "../../components/logInButtons";
 import LogOutButtonV from "../../components/logOutButtonV";
 import LogOutButtonR from "../../components/logOutButtonR";
