@@ -50,11 +50,11 @@ function Header(){
 
             <div id="video_containerId" className="video_container" onMouseEnter={showVideo} onMouseLeave={hideVideo}>
             <video width="80%" height="350" className="video_header"  id="video_headerId" controls onClick={playVideo2}>
-                <source src={require('../Videos/video_header.mp4')} type="video/mp4"/>
+                <source src={require('../videos/video_header.mp4')} type="video/mp4"/>
 
             </video>
             <video muted width="80%" height="350" className="video_header" id="video2_headerId" controls onClick={playVideo1}>
-                <source src={require('../Videos/video_header.mp4')} type="video/mp4"/>
+                <source src={require('../videos/video_header.mp4')} type="video/mp4"/>
 
             </video>
             </div>

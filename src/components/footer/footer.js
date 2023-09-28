@@ -9,9 +9,9 @@ function Footer(){
 
             <article className="footer_containerB">
             <div className="footer_sectionB" >
-                <a href="/legal"><div className="footer_sectionB1 footer_sectionB2 footer_sectionBa">Legal</div></a>
-                <a href="/contact"><div className="footer_sectionB1 footer_sectionBb">Contact</div></a>
                 <a href="/"><div className="footer_sectionB1 footer_sectionB2 footer_sectionBc">Home</div></a>
+                <a href="/contact"><div className="footer_sectionB1 footer_sectionBb">Contact</div></a>
+                <a href="/legal"><div className="footer_sectionB1 footer_sectionB2 footer_sectionBa">Legal</div></a>
             </div>
 
             <div className="footer_sectionA">
