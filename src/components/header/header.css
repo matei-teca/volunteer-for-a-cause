@@ -23,6 +23,10 @@
   border: solid 0px #edc339;
   transition: border 1s;
   z-index: 50;
+  height: 300px;
+  border-radius: 50%;
+  margin-top: 30px;
+  margin-left: 3.5px;
 }
 
 .logo:hover {
@@ -30,9 +34,13 @@
   transition: border 1s;
 }
 
-.logoAfter {
+.logo_after {
   opacity: 0.3;
   transition: 1s;
+  height: 300px;
+  border-radius: 50%;
+  margin-top: 30px;
+  margin-left: 3.5px;
 }
 
 .video_header {
