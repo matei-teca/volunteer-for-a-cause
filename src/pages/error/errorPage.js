@@ -1,14 +1,12 @@
-
-import React, {useRef} from "react";
+import React from "react";
 import "./errorPage.css";
 
 function ErrorPage() {
-
   return (
-    <div>      
-    <div className = "errorPage_container">
+    <div>
+      <div className="errorPage_container">
         <h1>ERROR page not found!</h1>
-    </div>
+      </div>
     </div>
   );
 }
