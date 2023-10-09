@@ -1,118 +1,113 @@
 .footer_wrapper {
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:400px;
-    margin-top:50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  margin-top: 50px;
 }
 
 .footer_container {
-    display:flex;
-    flex-direction:row;
-    justify-content:space-around;
-    align-items:center;
-    width:99%;
-    height:390px;
-    background-size:75%;
-    border-radius:5% 5% 5% 5%;
-    border: 1px solid black;
-    transition: border 1s;
-    background-color: rgba(0,0,0,0.7);
-    background-blend-mode: darken;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 99%;
+  height: 390px;
+  background-size: 75%;
+  border-radius: 5% 5% 5% 5%;
+  border: 1px solid black;
+  transition: border 1s;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: darken;
 }
 
 .footer_containerB {
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    width:30%;
-    height:200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 200px;
 }
 
 .footer_container:hover {
-    border: 1px solid #EDC339;
-    transition: border 1s
+  border: 1px solid #edc339;
+  transition: border 1s;
 }
 
 .footer_sectionA {
-    background-color:black;
-    color:white;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    border-radius:40%;
-    transition: all 3s;
-    height: 0px;
-    width: 120px;
-    padding: 0px;
-    border: 5px solid #01577D
-
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40%;
+  transition: all 3s;
+  height: 0px;
+  width: 120px;
+  padding: 0px;
+  border: 5px solid #01577d;
 }
-    
+
 .footer_sectionA:hover {
-    transition: all 1s;
-    height: 10px;
-    width: 220px;
-    padding: 30px;
-    border: 5px solid #EDC339;
-
-    cursor:default
-
+  transition: all 1s;
+  height: 10px;
+  width: 220px;
+  padding: 30px;
+  border: 5px solid #edc339;
+  cursor: default;
 }
-    
+
 .footer_sectionAText {
-    transition: all 0.3s;
-    opacity: 0;
-
-}
-    
-.footer_sectionA:hover .footer_sectionAText{
-    opacity: 1;
-    transition: opacity 2s ease-in 0.6s;
-
+  transition: all 0.3s;
+  opacity: 0;
 }
 
-.footer_sectionB{
-    background-color:;
-    color:white;
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    align-items:center;
-    width:620px;
-    height:120px;
-    padding:30px;
+.footer_sectionA:hover .footer_sectionAText {
+  opacity: 1;
+  transition: opacity 2s ease-in 0.6s;
+}
+
+.footer_sectionB {
+  background-color: ;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 620px;
+  height: 120px;
+  padding: 30px;
 }
 
 .footer_sectionB1 {
-    background-color:black;
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-    align-items:center;
-    border-radius:50%;
-    width:100px;
-    height:100px;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
 }
 
 .footer_sectionB2 {
-    margin-top: 130px;
-    text-decoration: "none";
+  margin-top: 130px;
+  text-decoration: "none";
 }
-    
-.footer_sectionBa, .footer_sectionBb, .footer_sectionBc {
-    border: 2px solid #227AA1;
-    text-decoration: none;
-    color: white
 
-
+.footer_sectionBa,
+.footer_sectionBb,
+.footer_sectionBc {
+  border: 2px solid #227aa1;
+  text-decoration: none;
+  color: white;
 }
-    
-.footer_sectionBa:hover, .footer_sectionBb:hover, .footer_sectionBc:hover {
-    border: 2px solid #EDC339;
-    cursor:pointer;
-    /* color: #EDC339; */
 
+.footer_sectionBa:hover,
+.footer_sectionBb:hover,
+.footer_sectionBc:hover {
+  border: 2px solid #edc339;
+  cursor: pointer;
 }

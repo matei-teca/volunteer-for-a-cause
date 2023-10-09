@@ -1,53 +1,10 @@
-
-.textStyle{
-    font-family:'Roboto',sans-serif;
-    font-weight: 300;
+.textStyle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
-
-/* START START START
-HEADER HEADER HEADER */
-
-/* END END END
-HEADER HEADER HEADER */
-
-
-
-/* START START START
-WELCOME WELCOME WELCOME */
-
-
-
-/* END END END
-WELCOME WELCOME WELCOME */
 
 .main_background {
-    background-image: url("../img/main-background.jpeg");
-    background-attachment: fixed;
-    background-position: center
+  background-image: url("../img/main-background.jpeg");
+  background-attachment: fixed;
+  background-position: center;
 }
-
-/* START START START
-BUTTONS BUTTONS BUTTONS */
-
-
-
-
-/* END END END
-BUTTONS BUTTONS BUTTONS */
-
-
-
-/* START START START
-LOGGEDINV LOGGEDINV LOGGEDINV */
-
-
-/* END END END
-LOGGEDINV LOGGEDINV LOGGEDINV */
-
-
-
-/* START START START
-FOOTER FOOTER FOOTER */
-
-/* END END END
-FOOTER FOOTER FOOTER */

@@ -1,11 +1,11 @@
 .legalPage_container {
-    background-color:#227AA1;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    align-items:center;
-    padding-left:300px;
-    padding-right:300px;
-    padding-top:30px;
-    padding-bottom:30px;
+  background-color: #227aa1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }

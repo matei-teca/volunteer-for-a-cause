@@ -1,28 +1,28 @@
 .container {
-    background-color:#227AA1;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding-top:30px;
-    padding-bottom:30px;
-    margin: 0px;
+  background-color: #227aa1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0px;
 }
 
 .form_container {
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:30px;
-    margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin-top: 100px;
 }
 
 .form_section {
-    margin: 0px;
-    padding: 10px;
+  margin: 0px;
+  padding: 10px;
 }
 
 .form_button_section {
-    padding: 10px;
-    display: flex;
-    justify-content: center;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
 }
