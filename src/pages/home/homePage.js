@@ -30,7 +30,7 @@ function HomePage() {
   };
 
   return (
-    <body className = "main_background">
+    <body className = "mainBackground">
 
     <Header/>
       
