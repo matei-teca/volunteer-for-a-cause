@@ -1,105 +1,38 @@
 import React from "react";
-import { useState } from 'react'; 
-import '../styles.css';
-import './loggedInR.css';
+import { useState } from "react";
+import "../styles.css";
+import "./loggedInR.css";
 
-function LogInR(){
+function LogInR() {
+  const [orgName, setOrgName] = useState("");
 
-    const styles = {
-
-        containerA:{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "space-between",
-            alignItems: "center",
-            padding: 10, 
-            width: "100%",
-            height: "100%",
-
-        },
-
-        containerB:{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "space-between",
-            alignItems: "center",
-            padding: 100,
-            backgroundImage: `url("https://sites.breakingmedia.com/uploads/sites/3/2022/02/ukraine_war_4-scaled.jpg")`,
-            width: "100%",
-            height: "100%",
-            backgroundSize: "50%",
-            backgroundColor: "green",
-            borderRadius: "50%"
-
-        },
-
-        title: {
-            backgroundColor: "#EDC339",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "space-between",
-            alignItems: "center",
-            padding: 60,
-            marginTop: "5%",
-            marginBottom: 45,
-            width: 800,
-            borderRadius: 10
-
-
-        },
-        formA: {
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-            marginTop: 50
-        },
-
-        formA2: {
-            marginTop: 10,
-            padding: 7
-        }
-        
-    }
-
-    const [orgName, setOrgName] = useState("");
-
-    return(
-        <div style={styles.containerA}>
-        <div style={styles.containerB}>
-        <div style={styles.title}>
-            
-            <h1 className="textStyle">
-                Welcome dear Recruiter!
-            </h1>
-            <p className="textStyle">
-                We missed you!
-            </p>
+  return (
+    <div className="loggedInR_containerA">
+      <div className="loggedInR_containerB">
+        <div className="title">
+          <h1 className="textStyle">Welcome dear Recruiter!</h1>
+          <p className="textStyle">We missed you!</p>
         </div>
+      </div>
 
-        
-        </div>
-
-<div style={styles.title}>
-
-
-<form className="textStyle">
-<label style = {styles.formA} >Organization:
-<input
-style = {styles.formA2}
-type="text" 
-alue={orgName}
-onChange={(e) => setOrgName(e.target.value)}
-/>
-</label>
-<p><i>Please tell us the organization you represent</i></p>
-</form>
-
-
-</div>
-</div>
-
-    )
+      <div className="title">
+        <form className="textStyle">
+          <label className="form_label">
+            Organization:
+            <input
+              className="form_input"
+              type="text"
+              alue={orgName}
+              onChange={(e) => setOrgName(e.target.value)}
+            />
+          </label>
+          <p>
+            <i>Please tell us the organization you represent</i>
+          </p>
+        </form>
+      </div>
+    </div>
+  );
 }
 
 export default LogInR;
