@@ -10,9 +10,9 @@ function LogInV() {
   const [time, setTime] = useState("");
 
   function title1TextAnimation() {
-    var elem = document.getElementById("title1Section");
-    var elemText = document.getElementById("title1SectionText");
-    var elemText2 = document.getElementById("title1SectionText2");
+    let elem = document.getElementById("title1Section");
+    let elemText = document.getElementById("title1SectionText");
+    let elemText2 = document.getElementById("title1SectionText2");
 
     elem.style.fontSize = "50px";
     elemText.style.opacity = "1";
@@ -20,8 +20,8 @@ function LogInV() {
   }
 
   function changeTextColor() {
-    var text = document.getElementById("title1SectionText");
-    var text2 = document.getElementById("title1SectionText2");
+    let text = document.getElementById("title1SectionText");
+    let text2 = document.getElementById("title1SectionText2");
 
     text.classList.remove("title1SectionText");
     text.classList.add("title1SectionTextHover");
@@ -30,8 +30,8 @@ function LogInV() {
   }
 
   function rechangeTextColor() {
-    var text = document.getElementById("title1SectionText");
-    var text2 = document.getElementById("title1SectionText2");
+    let text = document.getElementById("title1SectionText");
+    let text2 = document.getElementById("title1SectionText2");
 
     text.classList.remove("title1SectionTextHover");
     text.classList.add("title1SectionText");
