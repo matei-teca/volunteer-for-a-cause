@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import LogInV from "../../components/loggedInV/loggedInV";
 import LogInR from "../../components/loggedInR/loggedInR";
 import { increment, decrement, signIn, reset, signInV, signInR } from "../../redux/actions";
-import Welcome from "../../components/welcome";
+import Welcome from "../../components/welcome/welcome";
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
 import LogInButtons from "../../components/buttons/logInButtons";

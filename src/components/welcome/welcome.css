@@ -1,0 +1,39 @@
+.welcome_container_small {
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:5%;
+    border-radius:10;
+    height: 0px;
+    width: 120px;
+    padding: 0px;
+    transition: 0s 180s;
+    border: 5px solid black;
+}
+
+.welcome_container_large {
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:5%;
+    border-radius:10;
+    height: 100px;
+    width: 550px;
+    padding: 30px;
+    border: 1px solid #EDC339;
+    transition: all 1s;
+}
+
+.welcome_text_small {
+    opacity: 0;
+    transition: 0s 180s;
+}
+
+.welcome_text_large {
+    opacity: 1;
+    transition: opacity 2s ease-in 0.6s;
+}

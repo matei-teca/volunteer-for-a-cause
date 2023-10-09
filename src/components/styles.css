@@ -15,27 +15,7 @@ HEADER HEADER HEADER */
 /* START START START
 WELCOME WELCOME WELCOME */
 
-#welcome_container {
-    color:white;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    align-items:center;
-    margin-top:5%;
-    border-radius:10;
-    height: 0px;
-    width: 120px;
-    padding: 0px;
-    transition: 0s 180s;
-    border: 5px solid black;
 
-}
-
-#welcome_text {
-    opacity: 0;
-    transition: 0s 180s
-
-}
 
 /* END END END
 WELCOME WELCOME WELCOME */
