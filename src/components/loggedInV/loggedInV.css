@@ -29,33 +29,6 @@
   transition: 1s;
 }
 
-.video_title1 {
-  background-color: red;
-  position: absolute;
-  border-radius: 100%;
-  height: 800px;
-  bottom: -70%;
-
-  /* todo: make video show at some point */
-  display: none;
-  transition: 1s;
-  cursor: pointer;
-}
-
-.video_title1After {
-  position: absolute;
-  border-radius: 100%;
-  height: 800px;
-  bottom: -70%;
-  /* display: inline; */
-  transition: 1s;
-}
-
-.video_title1After:hover {
-  opacity: 1;
-  transition: 1s;
-}
-
 .title1 {
   color: white;
   display: flex;
