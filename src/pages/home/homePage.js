@@ -7,9 +7,9 @@ import { increment, decrement, signIn, reset, signInV, signInR } from "../../red
 import Welcome from "../../components/welcome";
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
-import LogInButtons from "../../components/logInButtons";
-import LogOutButtonV from "../../components/logOutButtonV";
-import LogOutButtonR from "../../components/logOutButtonR";
+import LogInButtons from "../../components/buttons/logInButtons";
+import LogOutButtonV from "../../components/buttons/logOutButtonV";
+import LogOutButtonR from "../../components/buttons/logOutButtonR";
 import { scroller } from "react-scroll";
 import "./homePage.css";
 

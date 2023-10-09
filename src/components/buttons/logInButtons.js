@@ -1,10 +1,9 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { signInV, signInR } from "../redux/actions";
-import './styles.css';
+import { signInV, signInR } from "../../redux/actions";
+import '../styles.css';
+import './buttons.css';
 import { scroller } from "react-scroll";
-
-
 
 function LogInButtons(props){
 
