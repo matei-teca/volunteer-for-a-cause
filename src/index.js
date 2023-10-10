@@ -9,10 +9,12 @@ import LandingPage from "./pages/landing/landingPage";
 import ContactPage from "./pages/contact/contactPage";
 import ErrorPage from "./pages/error/errorPage";
 import LegalPage from "./pages/legal/legalPage";
+import Layout from "./pages/layout/layout";
 
 const router = createBrowserRouter([
   {
     path: "/",
+    element: <Layout />,
     errorElement: <ErrorPage />,
     children: [
       {

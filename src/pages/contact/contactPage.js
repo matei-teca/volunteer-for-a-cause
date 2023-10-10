@@ -23,8 +23,7 @@ function ContactPage() {
   }
 
   return (
-    <div>
-      <Header />
+    <section>
 
       <div className="container">
         <h1>Welcome to the CONTACT Page</h1>
@@ -52,8 +51,7 @@ function ContactPage() {
         </form>
       </div>
 
-      <Footer />
-    </div>
+    </section>
   );
 }
 

@@ -22,8 +22,6 @@ function LandingPage() {
   };
 
   return (
-    <body className="mainBackground">
-      <Header />
 
       <section className="homePage_container">
         {landingVolunteer ?
@@ -38,8 +36,6 @@ function LandingPage() {
         )}
       </section>
 
-      <Footer />
-    </body>
   );
 }
 

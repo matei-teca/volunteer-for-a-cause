@@ -5,15 +5,13 @@ import "./legalPage.css";
 
 function LegalPage() {
   return (
-    <div>
-      <Header />
+    <section>
 
       <div className="legalPage_container">
         <h1>Welcome to the LEGAL Page</h1>
       </div>
 
-      <Footer />
-    </div>
+    </section>
   );
 }
 

@@ -1,0 +1,16 @@
+import React from 'react'
+import { Outlet, Link } from "react-router-dom";
+import Header from '../../components/header/header';
+import Footer from '../../components/footer/footer';
+
+function Layout() {
+  return (
+    <body className="mainBackground">
+        <Header />
+            <Outlet />
+        <Footer />
+    </body>
+  )
+}
+
+export default Layout;

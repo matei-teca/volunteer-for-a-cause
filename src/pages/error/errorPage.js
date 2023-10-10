@@ -3,11 +3,11 @@ import "./errorPage.css";
 
 function ErrorPage() {
   return (
-    <div>
+    <section>
       <div className="errorPage_container">
         <h1>ERROR page not found!</h1>
       </div>
-    </div>
+    </section>
   );
 }
 
