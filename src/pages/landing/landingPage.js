@@ -7,9 +7,9 @@ import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
 import LogInButtons from "../../components/buttons/logInButtons";
 import { scroller } from "react-scroll";
-import "./homePage.css";
+import "./landingPage.css";
 
-function HomePage() {
+function LandingPage() {
   const landingVolunteer = useSelector((state) => state.landingVolunteer);
   const landingRecruiter = useSelector((state) => state.landingRecruiter);
 
@@ -43,4 +43,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default LandingPage;

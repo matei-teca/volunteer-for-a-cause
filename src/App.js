@@ -1,5 +1,5 @@
 
-import HomePage from "./pages/home/homePage";
+import LandingPage from "./pages/landing/landingPage";
 import ContactPage from "./pages/contact/contactPage";
 import ErrorPage from "./pages/error/errorPage";
 import LegalPage from "./pages/legal/legalPage";
@@ -12,7 +12,7 @@ function App() {
     <Router>
 
       <Routes>
-        <Route path="/" element={<HomePage/>}/>
+        <Route path="/" element={<LandingPage/>}/>
         <Route path="/contact" element={<ContactPage/>}/>
         <Route path="/legal" element={<LegalPage/>}/>
 
