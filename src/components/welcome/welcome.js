@@ -4,13 +4,13 @@ import "./welcome.css";
 
 function Welcome() {
 
-  setTimeout(() => {
-    let container = document.getElementById("welcome_container");
-    let text = document.getElementById("welcome_text");
+  // setTimeout(() => {
+  //   let container = document.getElementById("welcome_container");
+  //   let text = document.getElementById("welcome_text");
 
-    container.className = "welcome_container_large";
-    text.className = "welcome_text_large textStyle";
-  }, 1000);
+  //   container.className = "welcome_container_large";
+  //   text.className = "welcome_text_large textStyle";
+  // }, 1000);
 
   return (
     <div
