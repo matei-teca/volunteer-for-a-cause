@@ -22,8 +22,8 @@ export const signInV = () => {
     }
 }
 
-export const signInR = () => {
+export const landingRecruiter = () => {
     return {
-        type: "SIGN_IN_R"
+        type: "LANDING_RECRUITER"
     }
 }

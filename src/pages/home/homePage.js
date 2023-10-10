@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import LogInV from "../../components/loggedInV/loggedInV";
-import LogInR from "../../components/loggedInR/loggedInR";
+import LandingRecruiter from "../../components/Recruiter/landingRecruiter";
 import Welcome from "../../components/welcome/welcome";
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
@@ -11,7 +11,7 @@ import "./homePage.css";
 
 function HomePage() {
   const isLoggedV = useSelector((state) => state.isLoggedV);
-  const isLoggedR = useSelector((state) => state.isLoggedR);
+  const landingRecruiter = useSelector((state) => state.landingRecruiter);
 
   const scrollToSection = () => {
     scroller.scrollTo("test", {
@@ -28,8 +28,8 @@ function HomePage() {
       <section className="homePage_container">
         {isLoggedV ? 
             <LogInV />
-        : isLoggedR ? 
-            <LogInR />
+        : landingRecruiter ?
+            <LandingRecruiter />
             : (
           <>
             <Welcome />

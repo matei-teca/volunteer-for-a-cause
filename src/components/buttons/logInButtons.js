@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { signInV, signInR } from "../../redux/actions";
+import { signInV, landingRecruiter } from "../../redux/actions";
 import "../styles.css";
 import "./buttons.css";
 
@@ -8,7 +8,7 @@ function LogInButtons(props) {
 
   // const isLogged = useSelector(state => state.isLogged);
   // const isLoggedV = useSelector(state => state.isLoggedV);
-  // const isLoggedR = useSelector(state => state.isLoggedR);
+  // const landingRecruiter = useSelector(state => state.landingRecruiter);
   // localStorage.signedIn = !isLogged;
   // localStorage.signedIn = !isLogged;
 
@@ -29,7 +29,7 @@ function LogInButtons(props) {
         className="logInBttn"
         onClick={() => {
           props.scrollToSection();
-          dispatch(signInR());
+          dispatch(landingRecruiter());
         }}
       >
         Log in as recruiter
