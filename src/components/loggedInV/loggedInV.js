@@ -1,6 +1,9 @@
 import React from "react";
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { signInV } from "../../redux/actions";
 import { scroller } from "react-scroll";
+import LogOutButton from "../buttons/logOutButton";
 import "./loggedInV.css";
 import "../styles.css";
 
@@ -8,6 +11,8 @@ function LogInV() {
   const [name, setName] = useState("");
   const [contact, setContact] = useState("");
   const [time, setTime] = useState("");
+
+  const dispatch = useDispatch();
 
   function title1TextAnimation() {
     let elem = document.getElementById("title1Section");
@@ -50,6 +55,8 @@ function LogInV() {
   };
 
   return (
+    <>
+    <LogOutButton dispatch = {() => dispatch(signInV())}/>
     <div className="loggedIn_containerA">
       <div className="loggedIn_containerB" id="loggedIn_containerBId">
         <article
@@ -147,6 +154,7 @@ function LogInV() {
         </form>
       </article>
     </div>
+    </>
   );
 }
 

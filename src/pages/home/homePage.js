@@ -6,8 +6,6 @@ import Welcome from "../../components/welcome/welcome";
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
 import LogInButtons from "../../components/buttons/logInButtons";
-import LogOutButtonV from "../../components/buttons/logOutButtonV";
-import LogOutButtonR from "../../components/buttons/logOutButtonR";
 import { scroller } from "react-scroll";
 import "./homePage.css";
 
@@ -28,17 +26,11 @@ function HomePage() {
       <Header />
 
       <section className="homePage_container">
-        {isLoggedV ? (
-          <>
-            <LogOutButtonV /> 
+        {isLoggedV ? 
             <LogInV />
-          </>
-        ) : isLoggedR ? (
-          <>
-            <LogOutButtonR />
+        : isLoggedR ? 
             <LogInR />
-          </>
-        ) : (
+            : (
           <>
             <Welcome />
             <LogInButtons scrollToSection={scrollToSection} />
