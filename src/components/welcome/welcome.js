@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles.css";
 import "./welcome.css";
 
 function Welcome() {
@@ -9,7 +8,7 @@ function Welcome() {
   //   let text = document.getElementById("welcome_text");
 
   //   container.className = "welcome_container_large";
-  //   text.className = "welcome_text_large textStyle";
+  //   text.className = "welcome_text_large";
   // }, 1000);
 
   return (
@@ -17,7 +16,7 @@ function Welcome() {
       id="welcome_container"
       className="welcome_container_small"
     >
-      <h1 id="welcome_text" className="welcome_text_small textStyle">
+      <h1 id="welcome_text" className="welcome_text_small">
         Log in to start contributing
       </h1>
     </div>

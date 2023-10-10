@@ -1,11 +1,11 @@
 import React from "react";
 import "./footer.css";
-import "../styles.css";
+import "../../pages/layout/layout.css";
 
 function Footer() {
   return (
     <section className="footer_wrapper">
-      <div className="footer_container textStyle">
+      <div className="footer_container">
         <article className="footer_containerB">
           <div className="footer_sectionB">
             <a href="/">

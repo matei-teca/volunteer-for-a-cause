@@ -5,7 +5,6 @@ import { landingVolunteer } from "../../redux/actions";
 import { scroller } from "react-scroll";
 import LogOutButton from "../buttons/logOutButton";
 import "./Volunteer.css";
-import "../styles.css";
 
 function LandingVolunteer() {
   const [name, setName] = useState("");
@@ -64,7 +63,7 @@ function LandingVolunteer() {
           className="title1"
           onMouseEnter={title1TextAnimation}
         >
-          <h1 className="textStyle title1Section" id="title1Section">
+          <h1 className="title1Section" id="title1Section">
             Bine ai venit!
           </h1>
 
@@ -103,11 +102,11 @@ function LandingVolunteer() {
           <abbr>LLWL</abbr> (Live a life worth living!)
         </p>
 
-        <h1 className="textStyle" style={{ fontSize: 35 }}>
+        <h1 style={{ fontSize: 35 }}>
           Join the battle!
         </h1>
 
-        <p className="textStyle scroll">
+        <p className="scroll">
           Let us now when are you available to participate in volunteer
           activities, and we will hook you up!
         </p>
@@ -115,7 +114,6 @@ function LandingVolunteer() {
 
       <article className="formV">
         <form
-          className="textStyle"
           onSubmit={() => alert("your answer was succesfully submited")}
         >
           <label className="form_section1">

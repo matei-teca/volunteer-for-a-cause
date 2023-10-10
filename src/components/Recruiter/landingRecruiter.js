@@ -3,7 +3,6 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { landingRecruiter } from "../../redux/actions";
 import LogOutButton from "../buttons/logOutButton";
-import "../styles.css";
 import "./Recruiter.css";
 
 function LandingRecruiter() {
@@ -16,13 +15,13 @@ function LandingRecruiter() {
     <div className="loggedInR_containerA">
       <div className="loggedInR_containerB">
         <div className="title">
-          <h1 className="textStyle">Welcome dear Recruiter!</h1>
-          <p className="textStyle">We missed you!</p>
+          <h1>Welcome dear Recruiter!</h1>
+          <p>We missed you!</p>
         </div>
       </div>
 
       <div className="title">
-        <form className="textStyle">
+        <form>
           <label className="form_label">
             Organization:
             <input
