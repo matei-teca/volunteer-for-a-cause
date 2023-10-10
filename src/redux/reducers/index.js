@@ -1,12 +1,12 @@
 import counterReducer from "./counter";
 
 import { combineReducers } from "redux";
-import loggedVReducer from "./isLoggedV";
+import landingVolunteer from "./landingVolunteer";
 import landingRecruiter from "./landingRecruiter";
 
 const allReducers = combineReducers({
     counter: counterReducer,
-    isLoggedV: loggedVReducer,
+    landingVolunteer: landingVolunteer,
     landingRecruiter: landingRecruiter,
 })
 

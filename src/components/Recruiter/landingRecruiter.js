@@ -28,7 +28,6 @@ function LandingRecruiter() {
             <input
               className="form_input"
               type="text"
-              alue={orgName}
               onChange={(e) => setOrgName(e.target.value)}
             />
           </label>

@@ -4,10 +4,10 @@ import { useDispatch } from "react-redux";
 import { signInV } from "../../redux/actions";
 import { scroller } from "react-scroll";
 import LogOutButton from "../buttons/logOutButton";
-import "./loggedInV.css";
+import "./Volunteer.css";
 import "../styles.css";
 
-function LogInV() {
+function LandingVolunteer() {
   const [name, setName] = useState("");
   const [contact, setContact] = useState("");
   const [time, setTime] = useState("");
@@ -158,4 +158,4 @@ function LogInV() {
   );
 }
 
-export default LogInV;
+export default LandingVolunteer;

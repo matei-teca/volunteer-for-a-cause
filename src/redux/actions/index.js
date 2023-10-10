@@ -18,7 +18,7 @@ export const reset = () => {
 
 export const signInV = () => {
     return {
-        type: "SIGN_IN_V"
+        type: "LANDING_VOLUNTEER"
     }
 }
 
