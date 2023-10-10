@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { signInV } from "../../redux/actions";
+import { landingVolunteer } from "../../redux/actions";
 import { scroller } from "react-scroll";
 import LogOutButton from "../buttons/logOutButton";
 import "./Volunteer.css";
@@ -56,7 +56,7 @@ function LandingVolunteer() {
 
   return (
     <>
-    <LogOutButton dispatch = {() => dispatch(signInV())}/>
+    <LogOutButton dispatch = {() => dispatch(landingVolunteer())}/>
     <div className="loggedIn_containerA">
       <div className="loggedIn_containerB" id="loggedIn_containerBId">
         <article

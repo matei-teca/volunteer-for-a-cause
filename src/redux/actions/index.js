@@ -16,7 +16,7 @@ export const reset = () => {
     }
 }
 
-export const signInV = () => {
+export const landingVolunteer = () => {
     return {
         type: "LANDING_VOLUNTEER"
     }

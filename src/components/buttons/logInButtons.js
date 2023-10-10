@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { signInV, landingRecruiter } from "../../redux/actions";
+import { landingVolunteer, landingRecruiter } from "../../redux/actions";
 import "../styles.css";
 import "./buttons.css";
 
@@ -20,7 +20,7 @@ function LogInButtons(props) {
         className="logInBttn"
         onClick={() => {
           props.scrollToSection();
-          dispatch(signInV());
+          dispatch(landingVolunteer());
         }}
       >
         Log in as volunteer
