@@ -18,7 +18,7 @@ function LandingVolunteer() {
     let elemText = document.getElementById("title1SectionText");
     let elemText2 = document.getElementById("title1SectionText2");
 
-    elem.style.fontSize = "50px";
+    elem.style.fontSize = "40px";
     elemText.style.opacity = "1";
     elemText2.style.opacity = "1";
   }
@@ -64,7 +64,7 @@ function LandingVolunteer() {
           onMouseEnter={title1TextAnimation}
         >
           <h1 className="title1Section" id="title1Section">
-            Bine ai venit!
+            Welcome to your volunteering journey!
           </h1>
 
           <p className="title1SectionText" id="title1SectionText">
@@ -98,17 +98,16 @@ function LandingVolunteer() {
         onMouseEnter={changeTextColor}
         onMouseLeave={rechangeTextColor}
       >
-        <p className="llwl">
+        {/* <p className="llwl">
           <abbr>LLWL</abbr> (Live a life worth living!)
-        </p>
+        </p> */}
 
-        <h1 style={{ fontSize: 35 }}>
-          Join the battle!
+        <h1 className="llwl" style={{ fontSize: 35 }}>
+          Start your application!
         </h1>
 
         <p className="scroll">
-          Let us now when are you available to participate in volunteer
-          activities, and we will hook you up!
+          First of all we need to know about you and your objectives
         </p>
       </section>
 

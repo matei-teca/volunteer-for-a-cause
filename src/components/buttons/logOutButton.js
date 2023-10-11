@@ -12,7 +12,7 @@ function LogOutButtonV(props) {
         props.dispatch()
       }}
     >
-      Log out
+      start again
     </button>
   );
 }

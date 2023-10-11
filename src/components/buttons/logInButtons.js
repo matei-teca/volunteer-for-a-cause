@@ -22,7 +22,7 @@ function LogInButtons(props) {
           dispatch(landingVolunteer());
         }}
       >
-        Log in as volunteer
+        volunteer for a cause
       </button>
       <button
         className="logInBttn"
@@ -31,7 +31,7 @@ function LogInButtons(props) {
           dispatch(landingRecruiter());
         }}
       >
-        Log in as recruiter
+        recruit volunteers
       </button>
     </div>
   );
