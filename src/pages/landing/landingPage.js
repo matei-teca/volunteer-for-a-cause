@@ -23,7 +23,7 @@ function LandingPage() {
 
   return (
 
-      <section className="homePage_container">
+      <section className="landingPage_container">
         {landingVolunteer ?
             <LandingVolunteer />
         : landingRecruiter ?

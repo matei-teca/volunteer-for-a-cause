@@ -4,45 +4,45 @@ import logoSrc from "../../img/logo.jpg";
 import "./header.css";
 
 function Header() {
-  let video = document.getElementById("video_headerId");
-  let video2 = document.getElementById("video2_headerId");
-  let videoContainer = document.getElementById("video_containerId");
-  let logo = document.getElementById("logoId");
+  // let video = document.getElementById("video_headerId");
+  // let video2 = document.getElementById("video2_headerId");
+  // let videoContainer = document.getElementById("video_containerId");
+  // let logo = document.getElementById("logoId");
 
-  const [played, setPlayed] = useState(false);
+  // const [played, setPlayed] = useState(false);
 
-  function showVideo() {
-    videoContainer.classList.remove("video_container");
-    videoContainer.classList.add("video_containerAfter");
+  // function showVideo() {
+  //   videoContainer.classList.remove("video_container");
+  //   videoContainer.classList.add("video_containerAfter");
 
-    logo.classList.remove("logo");
-    logo.classList.add("logo_after");
-  }
+  //   logo.classList.remove("logo");
+  //   logo.classList.add("logo_after");
+  // }
 
-  function hideVideo() {
-    logo.classList.remove("logo_after");
-    logo.classList.add("logo");
-  }
+  // function hideVideo() {
+  //   logo.classList.remove("logo_after");
+  //   logo.classList.add("logo");
+  // }
 
-  function playVideo1() {
-    setPlayed(!played);
+  // function playVideo1() {
+  //   setPlayed(!played);
 
-    if (played) {
-      video.pause();
-    } else {
-      video.play();
-    }
-  }
+  //   if (played) {
+  //     video.pause();
+  //   } else {
+  //     video.play();
+  //   }
+  // }
 
-  function playVideo2() {
-    setPlayed(!played);
+  // function playVideo2() {
+  //   setPlayed(!played);
 
-    if (played) {
-      video2.pause();
-    } else {
-      video2.play();
-    }
-  }
+  //   if (played) {
+  //     video2.pause();
+  //   } else {
+  //     video2.play();
+  //   }
+  // }
 
   return (
     <div className="header_containerA">
@@ -50,10 +50,10 @@ function Header() {
         <div
           id="video_containerId"
           className="video_container"
-          onMouseEnter={showVideo}
-          onMouseLeave={hideVideo}
+          // onMouseEnter={showVideo}
+          // onMouseLeave={hideVideo}
         >
-          <video
+          {/* <video
             width="80%"
             height="350"
             className="video_header"
@@ -79,7 +79,7 @@ function Header() {
               src={require("../../videos/video_header.mp4")}
               type="video/mp4"
             />
-          </video>
+          </video> */}
         </div>
 
         <img
