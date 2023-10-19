@@ -7,18 +7,21 @@
   background-blend-mode: darken;
   color: white;
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 20rem; 
+  justify-content: center;
+  height: 10rem; 
   padding: 0.5%;
-  background-size: 50%;
+  /* background-size: 50%; */
   /* border: 3px solid #edc339; */
   border-radius: 5% 5% 5% 5%;
 }
 
 .logo {
-  height: 18rem;
-  border-radius: 50%;
+  background-color: green;
+  position: absolute;
+  left: 5%; 
+  width: 10%;
+  border-radius: 100%;
   border: solid 0px #edc339;
   transition: border 1s;
   /* z-index: 50; */
@@ -27,6 +30,14 @@
 .logo:hover {
   border: solid 4px #edc339;
   transition: border 1s;
+}
+
+.header_quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  font-size: 1rem;
 }
 
 /*.logo_after {
