@@ -25,27 +25,27 @@ function ContactPage() {
   return (
     <section>
 
-      <div className="container">
+      <div className="cpage_container">
         <h1>Welcome to the CONTACT Page</h1>
       </div>
 
-      <div className="form_container">
+      <div className="cpage_form_container">
         <form
           action={FORM_ENDPOINT}
           onSubmit={handleSubmit}
           method="POST"
           target="_blank"
         >
-          <div className="form_section">
+          <div className="cpage_form_section">
             <input type="text" placeholder="Your name" name="name" required />
           </div>
-          <div className="form_section">
+          <div className="cpage_form_section">
             <input type="email" placeholder="Email" name="email" required />
           </div>
-          <div className="form_section">
+          <div className="cpage_form_section">
             <textarea placeholder="Your message" name="message" required />
           </div>
-          <div className="form_button_section">
+          <div className="cpage_form_button_section">
             <button type="submit"> Send a message </button>
           </div>
         </form>
