@@ -13,16 +13,6 @@ function LandingVolunteer() {
 
   const dispatch = useDispatch();
 
-  function title1TextAnimation() {
-    let elem = document.getElementById("title1Section");
-    let elemText = document.getElementById("title1SectionText");
-    let elemText2 = document.getElementById("title1SectionText2");
-
-    elem.style.fontSize = "40px";
-    elemText.style.opacity = "1";
-    elemText2.style.opacity = "1";
-  }
-
   function changeTextColor() {
     let text = document.getElementById("title1SectionText");
     let text2 = document.getElementById("title1SectionText2");
@@ -56,12 +46,11 @@ function LandingVolunteer() {
   return (
     <>
     <LogOutButton dispatch = {() => dispatch(landingVolunteer())}/>
-    <div className="loggedIn_containerA">
-      <div className="loggedIn_containerB" id="loggedIn_containerBId">
-        <article
+    <div className="landingV_containerA">
+      <div className="landingV_containerB" id="landingV_containerBId">
+        <section
           id="title1Id"
           className="title1"
-          onMouseEnter={title1TextAnimation}
         >
           <h1 className="title1Section" id="title1Section">
             Welcome to your volunteering journey!
@@ -89,7 +78,7 @@ function LandingVolunteer() {
             rhoncus lacinia felis. Morbi leo lacus, consequat id lacus quis,
             faucibus sodales enim.
           </p>
-        </article>
+        </section>
       </div>
 
       <section
@@ -98,11 +87,8 @@ function LandingVolunteer() {
         onMouseEnter={changeTextColor}
         onMouseLeave={rechangeTextColor}
       >
-        {/* <p className="llwl">
-          <abbr>LLWL</abbr> (Live a life worth living!)
-        </p> */}
 
-        <h1 className="llwl" style={{ fontSize: 35 }}>
+        <h1>
           Start your application!
         </h1>
 
@@ -111,11 +97,11 @@ function LandingVolunteer() {
         </p>
       </section>
 
-      <article className="formV">
+      <section className="formV">
         <form
           onSubmit={() => alert("your answer was succesfully submited")}
         >
-          <label className="form_section1">
+          <label className="form_section">
             Enter your name:
             <input
               className="form_input"
@@ -145,11 +131,11 @@ function LandingVolunteer() {
             />
           </label>
 
-          <div className="input_wrap ">
+          <div className="submitBttn_container">
             <input className="submitBttn" type="submit" value="Submit"></input>
           </div>
         </form>
-      </article>
+      </section>
     </div>
     </>
   );
