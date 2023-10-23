@@ -47,9 +47,9 @@
 }
 
 .footer_sectionA:hover {
-  height: 5%;
+  height: 1rem;
   width: 40%;
-  padding: 5%;
+  padding: 2rem;
   border: 1px solid #edc339;
   cursor: default;
   transition: all 1s;
