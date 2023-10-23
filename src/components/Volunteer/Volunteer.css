@@ -103,21 +103,35 @@
   margin-bottom: 30px;
   background-color: rgba(0, 0, 0, 0);
   color: black;
-  border: 3px solid #edc339;
+  border: 1px solid #edc339;
   transition: all 1s;
   border-radius: 5% 5% 5% 5%;
 }
 
+.formV input {
+  opacity: 0.3;
+}
+
+.submitBttn {
+  opacity: 1 !important;
+}
+
 .formV:hover {
   color: white;
-  border: 1px solid #edc339;
   transition: all 1s;
 }
 
 .formV:hover .submitBttn {
   color: white;
-  transition: color 1s;
+  border: 1px solid #edc339;
+  transition: all 1s;
 }
+
+.formV:hover input {
+  opacity: 0.9;
+  transition: 1s;
+}
+
 
 .form_section {
   display: flex;

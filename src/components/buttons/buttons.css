@@ -25,6 +25,7 @@
 }
 
 .logOut_bttn {
+  background-color: transparent;
   width: 10%;
   height: 4rem;
   margin-top: 4%;
