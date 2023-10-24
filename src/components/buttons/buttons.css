@@ -1,11 +1,12 @@
+
 .bttns_container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  width: 35%;
-  margin-top: 1%;
-  padding: 2%;
+  min-height: 10rem;
+  width: 50%;
+  margin-top: 5%;
 }
 
 .logInBttn, .logOut_bttn {
@@ -13,7 +14,7 @@
   color: #ffffff;
   display: inline-block;
   text-align: center;
-  width: 30%;
+  width: 100%;
   height: 4.5rem;
   padding: 0.6rem 1.2rem;
   border-radius: 100px;
@@ -33,4 +34,21 @@
 .logInBttn:hover, .logOut_bttn:hover {
   background-color: #4095c6;
   border: 1px solid #edc339;
+}
+
+@media (min-width: 600px){
+  .bttns_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+    width: 400px;
+    margin-top: 1%;
+    padding: 2%;
+  }
+
+  .logInBttn {
+    width: 160px;
+  }
 }
