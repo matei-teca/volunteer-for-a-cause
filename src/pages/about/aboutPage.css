@@ -1,0 +1,7 @@
+.aboutPage_container {
+  background-color: #227aa1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+}

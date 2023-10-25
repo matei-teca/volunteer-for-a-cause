@@ -7,19 +7,19 @@ function Footer() {
       <div className="footer_container">
         <article className="footer_containerB">
           <div className="footer_sectionB">
-            <a href="/">
-              <div className="footer_sectionB1 footer_sectionB2 footer_sectionBc">
-                Home
+            <a href="/about">
+              <div className="footer_sectionB1 footer_sectionB2 footer_sectionBa">
+                About
               </div>
             </a>
-            <a href="/contact">
-              <div className="footer_sectionB1 footer_sectionBb">
-                Contact
-                </div>
+
+            <a href="/">
+              <div className="footer_sectionB1 footer_sectionBb">Home</div>
             </a>
-            <a href="/legal">
-              <div className="footer_sectionB1 footer_sectionB2 footer_sectionBa">
-                Legal
+
+            <a href="/contact">
+              <div className="footer_sectionB1 footer_sectionB2  footer_sectionBc">
+                Contact
               </div>
             </a>
           </div>
