@@ -4,8 +4,7 @@
 }
 
 .footer_containerA {
-  background-color: rgba(0, 0, 0, 0.7);
-  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -5,33 +5,28 @@ function Footer() {
   return (
     <section className="footer_wrapper">
       <div className="footer_containerA">
-        <article className="footer_containerB1">
-          <div className="footer_containerB12"> 
+        <div className="footer_newsletter">Testing</div>
+        <div className="footer_containerB1">
+          <div className="footer_containerB12">
             <div className="footer_section1">
               <a href="/about">
                 <div className="footer_circle">About</div>
               </a>
 
               <a href="/">
-                <div className="footer_circle above">
-                  Home
-                </div>
+                <div className="footer_circle above">Home</div>
               </a>
 
               <a href="/contact">
-                <div className="footer_circle">
-                  Contact
-                </div>
+                <div className="footer_circle">Contact</div>
               </a>
             </div>
 
             <div className="footer_section2">
-              <p className="footer_section2Text">
-                Copyright © 2023 Matei Teca
-              </p>
+              <p className="footer_section2Text">Copyright © 2023 Matei Teca</p>
             </div>
           </div>
-        </article>
+        </div>
 
         <div className="footer_containerB2">
           <svg
