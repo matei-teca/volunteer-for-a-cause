@@ -1,11 +1,19 @@
 import React from "react";
 import "./footer.css";
 
+
 function Footer() {
   return (
     <section className="footer_wrapper">
       <div className="footer_containerA">
-        <div className="footer_newsletter">Testing</div>
+        <div className="footer_newsletter_container">
+          <div className="footer_newsletter_input_container">
+          <input className="footer_newsletter_input"/>
+          </div>
+          <button onClick={() => alert("works")} className="footer_newsletter_bttn">
+            <img src={require("../../img/newsletter_bttn_icon.jpg")} className="footer_newsletter_bttn_icon"/>
+          </button>
+        </div>
         <div className="footer_containerB1">
           <div className="footer_containerB12">
             <div className="footer_section1">
