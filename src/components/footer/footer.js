@@ -7,7 +7,7 @@ function Footer() {
       <div className="footer_containerA">
         <div className="footer_newsletter_container">
           <div className="footer_newsletter_input_container">
-            <input className="footer_newsletter_input" />
+            <input className="footer_newsletter_input" placeholder="subscribe with your email " />
           </div>
           <button
             onClick={() => alert("works")}

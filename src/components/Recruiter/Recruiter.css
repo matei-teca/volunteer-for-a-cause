@@ -3,44 +3,47 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
   width: 100%;
   height: 100%;
 }
 
-.loggedInR_containerB {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 100px;
-  background-image: url("https://sites.breakingmedia.com/uploads/sites/3/2022/02/ukraine_war_4-scaled.jpg");
-  width: 100%;
-  height: 100%;
-  background-size: 50%;
-  background-color: green;
-  border-radius: 50%;
-}
-
-.title {
-  background-color: #edc339;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 60px;
-  margin-top: 5%;
-  margin-bottom: 45px;
-  width: 800px;
-  border-radius: 10px;
-}
-
-.form_lable {
+.recruiter_section1 {
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  width: 80%;
+  padding: 2%;
+  cursor: default;
+  opacity: 1;
+  transition: 1s;
 }
 
+.recruiter_section1 h1 {
+  font-size: 1.7rem;
+  opacity: 1;
+  text-align: center;
+  transition: all 1s linear;
+}
 
+.recruiter_section1_text {
+  color: white;
+  transition: color 3s;
+}
+
+.recruiter_section1_text_after {
+  color: black;
+  transition: color 6s;
+}
+
+@media (min-width: 600px){
+  .recruiter_section1 {    
+    width: 60%;
+  }
+
+  .recruiter_section1 h1 {
+    transition: all 1s;
+  }
+
+}

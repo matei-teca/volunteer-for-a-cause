@@ -14,11 +14,11 @@
   transition: opacity 1s ease-in 0.6s;
 }
 
-.landingV_containerA:hover .title1 h1 {
+.landingV_containerA:hover .section1 h1 {
   font-size: 2.5rem;
 }
 
-.title1 {
+.section1 {
   color: white;
   display: flex;
   flex-direction: column;
@@ -31,19 +31,19 @@
   transition: 1s;
 }
 
-.title1 h1 {
+.section1 h1 {
   font-size: 1.7rem;
   opacity: 1;
   text-align: center;
   transition: all 1s linear;
 }
 
-.title1_section_text {
+.section1_text {
   color: white;
   transition: color 3s;
 }
 
-.title1_section_text_after {
+.section1_text_after {
   color: black;
   transition: color 6s;
 }
@@ -167,11 +167,11 @@
 } */
 
 @media (min-width: 600px){
-  .title1 {    
+  .section1 {    
     width: 60%;
   }
 
-  .title1 h1 {
+  .section1 h1 {
     transition: all 1s;
   }
 

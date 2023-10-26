@@ -14,28 +14,28 @@ function LandingVolunteer() {
   const dispatch = useDispatch();
 
   function changeTextColor() {
-    let text = document.getElementById("title1_section_text");
-    let text2 = document.getElementById("title1_section_text2");
 
-    text.classList.remove("title1_section_text");
-    text.classList.add("title1_section_text_after");
-    text2.classList.remove("title1_section_text");
-    text2.classList.add("title1_section_text_after");
+    const elements = document.querySelectorAll(".section1_text");
+
+    elements.forEach((element) => {
+      element.classList.add("section1_text_after");
+      element.classList.remove("section1_text");
+    });
   }
 
   function rechangeTextColor() {
-    let text = document.getElementById("title1_section_text");
-    let text2 = document.getElementById("title1_section_text2");
 
-    text.classList.remove("title1_section_text_after");
-    text.classList.add("title1_section_text");
-    text2.classList.remove("title1_section_text_after");
-    text2.classList.add("title1_section_text");
+    const elements = document.querySelectorAll(".section1_text_after");
+
+    elements.forEach((element) => {
+      element.classList.add("section1_text");
+      element.classList.remove("section1_text_after");
+    });
   }
 
   const unfocus_title2 = () => {
     document.getElementById("title2").style.border = "1px solid black";
-  }
+  };
 
   const scrollToSection = () => {
     scroller.scrollTo("scroll", {
@@ -50,21 +50,16 @@ function LandingVolunteer() {
   const focus_formV = () => {
     document.getElementById("formV").style.border = "1px solid #edc339";
     unfocus_title2();
-  }
+  };
 
   return (
     <>
-    <LogOutButton dispatch = {() => dispatch(landingVolunteer())}/>
-    <div className="landingV_containerA">
-        <section
-          id="title1Id"
-          className="title1"
-        >
-          <h1>
-            Welcome to your volunteering journey!
-          </h1>
+      <LogOutButton dispatch={() => dispatch(landingVolunteer())} />
+      <div className="landingV_containerA">
+        <section id="section1Id" className="section1">
+          <h1>Welcome to your volunteering journey!</h1>
 
-          <p className="title1_section_text" id="title1_section_text">
+          <p className="section1_text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
             dapibus, ipsum ut tempor maximus, arcu turpis accumsan eros, eu
             elementum est quam non nisi. Etiam magna velit, faucibus quis
@@ -76,7 +71,7 @@ function LandingVolunteer() {
             ullamcorper mauris, quis tristique libero ullamcorper non. Mauris
             euismod imperdiet felis id feugiat.
           </p>
-          <p className="title1_section_text" id="title1_section_text2">
+          <p className="section1_text">
             Donec condimentum lectus sit amet sapien auctor ullamcorper. Aliquam
             erat volutpat. Integer ultricies rhoncus nunc nec luctus. Fusce
             porttitor diam id egestas pretium. Nam imperdiet mauris ut hendrerit
@@ -86,65 +81,79 @@ function LandingVolunteer() {
             rhoncus lacinia felis. Morbi leo lacus, consequat id lacus quis,
             faucibus sodales enim.
           </p>
+          <p className="section1_text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            dapibus, ipsum ut tempor maximus, arcu turpis accumsan eros, eu
+            elementum est quam non nisi. Etiam magna velit, faucibus quis
+            fringilla et, placerat vel erat. Proin convallis arcu sed fermentum
+            feugiat. Curabitur volutpat dui in justo vulputate scelerisque.
+            Nulla non dui at purus scelerisque mollis et ac sapien. Pellentesque
+            ultricies ante a metus sagittis feugiat. Pellentesque convallis
+            risus nisi, ut ornare orci ullamcorper vitae. Phasellus venenatis
+            ullamcorper mauris, quis tristique libero ullamcorper non. Mauris
+            euismod imperdiet felis id feugiat.
+          </p>
         </section>
 
-      <section
-        id="title2"
-        className="title2"
-        onClick={() => {scrollToSection(); focus_formV()}}
-        onMouseEnter={changeTextColor}
-        onMouseLeave={rechangeTextColor}
-      >
-
-        <h1>
-          Start your application!
-        </h1>
-
-        <p className="scroll">
-          First of all we need to know about you and your objectives
-        </p>
-      </section>
-
-      <section id="formV" className="formV" onMouseEnter={unfocus_title2}>
-        <form
-          onSubmit={() => alert("your answer was succesfully submited")}
+        <section
+          id="title2"
+          className="title2"
+          onClick={() => {
+            scrollToSection();
+            focus_formV();
+          }}
+          onMouseEnter={changeTextColor}
+          onMouseLeave={rechangeTextColor}
         >
-          <label className="form_section">
-            Enter your name:
-            <input
-              className="form_input"
-              type="text"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-            />
-          </label>
+          <h1>Start your application!</h1>
 
-          <label className="form_section">
-            Phone / email:
-            <input
-              className="form_input"
-              type="text"
-              value={contact}
-              onChange={(e) => setContact(e.target.value)}
-            />
-          </label>
+          <p className="scroll">
+            First of all we need to know about you and your objectives
+          </p>
+        </section>
 
-          <label className="form_section">
-            Time when available
-            <input
-              className="form_input"
-              type="text"
-              value={time}
-              onChange={(e) => setTime(e.target.value)}
-            />
-          </label>
+        <section id="formV" className="formV" onMouseEnter={unfocus_title2}>
+          <form onSubmit={() => alert("your answer was succesfully submited")}>
+            <label className="form_section">
+              Enter your name:
+              <input
+                className="form_input"
+                type="text"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+            </label>
 
-          <div className="submitBttn_container">
-            <input className="submitBttn" type="submit" value="Submit"></input>
-          </div>
-        </form>
-      </section>
-    </div>
+            <label className="form_section">
+              Phone / email:
+              <input
+                className="form_input"
+                type="text"
+                value={contact}
+                onChange={(e) => setContact(e.target.value)}
+              />
+            </label>
+
+            <label className="form_section">
+              Time when available
+              <input
+                className="form_input"
+                type="text"
+                value={time}
+                onChange={(e) => setTime(e.target.value)}
+              />
+            </label>
+
+            <div className="submitBttn_container">
+              <input
+                className="submitBttn"
+                type="submit"
+                value="Submit"
+              ></input>
+            </div>
+          </form>
+        </section>
+      </div>
     </>
   );
 }
