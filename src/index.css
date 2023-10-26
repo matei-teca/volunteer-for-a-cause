@@ -8,17 +8,13 @@ body {
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("./img/main-background.jpeg");
+  background-attachment: fixed;
+  background-position: center;
 }
 
 h1 {
   font-weight: 300;
-}
-
-.layout {
-  background-image: url("./img/main-background.jpeg");
-  background-attachment: fixed;
-  background-position: center;
-
 }
 
 .form_input {
