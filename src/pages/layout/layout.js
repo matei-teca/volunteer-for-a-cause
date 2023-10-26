@@ -5,7 +5,7 @@ import Footer from '../../components/footer/footer';
 
 function Layout() {
   return (
-    <body className="layout">
+    <body>
         <Header />
             <Outlet />
         <Footer />

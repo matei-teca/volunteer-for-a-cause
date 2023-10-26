@@ -14,23 +14,27 @@ function LandingVolunteer() {
   const dispatch = useDispatch();
 
   function changeTextColor() {
-    let text = document.getElementById("title1SectionText");
-    let text2 = document.getElementById("title1SectionText2");
+    let text = document.getElementById("title1_section_text");
+    let text2 = document.getElementById("title1_section_text2");
 
-    text.classList.remove("title1SectionText");
-    text.classList.add("title1SectionTextHover");
-    text2.classList.remove("title1SectionText");
-    text2.classList.add("title1SectionTextHover");
+    text.classList.remove("title1_section_text");
+    text.classList.add("title1_section_text_after");
+    text2.classList.remove("title1_section_text");
+    text2.classList.add("title1_section_text_after");
   }
 
   function rechangeTextColor() {
-    let text = document.getElementById("title1SectionText");
-    let text2 = document.getElementById("title1SectionText2");
+    let text = document.getElementById("title1_section_text");
+    let text2 = document.getElementById("title1_section_text2");
 
-    text.classList.remove("title1SectionTextHover");
-    text.classList.add("title1SectionText");
-    text2.classList.remove("title1SectionTextHover");
-    text2.classList.add("title1SectionText");
+    text.classList.remove("title1_section_text_after");
+    text.classList.add("title1_section_text");
+    text2.classList.remove("title1_section_text_after");
+    text2.classList.add("title1_section_text");
+  }
+
+  const unfocus_title2 = () => {
+    document.getElementById("title2").style.border = "1px solid black";
   }
 
   const scrollToSection = () => {
@@ -43,20 +47,24 @@ function LandingVolunteer() {
     console.log("woorks");
   };
 
+  const focus_formV = () => {
+    document.getElementById("formV").style.border = "1px solid #edc339";
+    unfocus_title2();
+  }
+
   return (
     <>
     <LogOutButton dispatch = {() => dispatch(landingVolunteer())}/>
     <div className="landingV_containerA">
-      <div className="landingV_containerB" id="landingV_containerBId">
         <section
           id="title1Id"
           className="title1"
         >
-          <h1 className="title1Section" id="title1Section">
+          <h1>
             Welcome to your volunteering journey!
           </h1>
 
-          <p className="title1SectionText" id="title1SectionText">
+          <p className="title1_section_text" id="title1_section_text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
             dapibus, ipsum ut tempor maximus, arcu turpis accumsan eros, eu
             elementum est quam non nisi. Etiam magna velit, faucibus quis
@@ -68,7 +76,7 @@ function LandingVolunteer() {
             ullamcorper mauris, quis tristique libero ullamcorper non. Mauris
             euismod imperdiet felis id feugiat.
           </p>
-          <p className="title1SectionText" id="title1SectionText2">
+          <p className="title1_section_text" id="title1_section_text2">
             Donec condimentum lectus sit amet sapien auctor ullamcorper. Aliquam
             erat volutpat. Integer ultricies rhoncus nunc nec luctus. Fusce
             porttitor diam id egestas pretium. Nam imperdiet mauris ut hendrerit
@@ -79,11 +87,11 @@ function LandingVolunteer() {
             faucibus sodales enim.
           </p>
         </section>
-      </div>
 
       <section
+        id="title2"
         className="title2"
-        onClick={scrollToSection}
+        onClick={() => {scrollToSection(); focus_formV()}}
         onMouseEnter={changeTextColor}
         onMouseLeave={rechangeTextColor}
       >
@@ -97,7 +105,7 @@ function LandingVolunteer() {
         </p>
       </section>
 
-      <section className="formV">
+      <section id="formV" className="formV" onMouseEnter={unfocus_title2}>
         <form
           onSubmit={() => alert("your answer was succesfully submited")}
         >

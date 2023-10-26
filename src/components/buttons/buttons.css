@@ -26,9 +26,8 @@
 
 .logOut_bttn {
   background-color: transparent;
-  width: 10%;
-  height: 4rem;
-  margin-top: 4%;
+  width: 200px;
+  margin-top: 3rem;
 }
 
 .logInBttn:hover, .logOut_bttn:hover {

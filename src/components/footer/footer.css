@@ -37,22 +37,33 @@
 }
 
 .footer_newsletter_input {
-  background-color: white;
+  background-color: rgb(33, 65, 84);
   width: 100%;
   height: 100%;
   padding-inline: 1rem;
-  border: none;
+  border: 1px solid #227aa1;
   border-radius: 100px;
+  transition: background-color 0.5s;
+}
+
+.footer_newsletter_input:hover {
+  border: 1px solid #edc339;
+}
+
+.footer_newsletter_input:focus {
+  background-color: rgba(255, 255, 255, 0.907);
+  transition: 1s;
 }
 
 .footer_newsletter_bttn {
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 2rem;
   height: 2rem;
   margin-left: -10px;
-  border: 1px solid black;
+  border: 1px solid #227aa1;
   border-radius: 100%;
   overflow: hidden;
   cursor: pointer;
@@ -60,6 +71,11 @@
 
 .footer_newsletter_bttn_icon {
   width: 250%;
+}
+
+.footer_newsletter_bttn:hover {
+  border: 1px solid #edc339;
+
 }
 
 .footer_containerB1 {
@@ -186,13 +202,37 @@
   }
 }
 
+@media (max-width: 500px) {
+  .footer_containerB1 {
+    margin-top: 1.5rem;
+  }
+
+  .footer_containerB2 {
+    margin-top: 1rem
+  }
+
+  .footer_containerA:hover .footer_section2 {
+    margin-top: -3rem;
+  }
+}
+
 @media (max-width: 340px) {
   .footer_containerB1 {
     width: 80%;
+    margin-top: 1rem;
   }
 
   .footer_section1 {
     min-width: 0;
+  }
+
+  .footer_newsletter_input_container {
+    width: 170px;
+    height: 30%;
+  }
+
+  .footer_newsletter_bttn {
+    margin-top: 3px
   }
 
   .footer_circle {
@@ -206,7 +246,8 @@
   }
 
   .footer_section2 {
-    margin-top: -3rem;
+    margin-top: -0rem;
+    text-align: center;
   }
 
   .footer_section2Text {
@@ -217,5 +258,9 @@
     margin-top: -4.5rem;
     min-width: 6rem;
     text-align: center;
+  }
+
+  .footer_containerB2 {
+    margin-top: 1rem
   }
 }
