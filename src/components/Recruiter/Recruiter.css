@@ -37,6 +37,11 @@
   transition: color 6s;
 }
 
+
+.recruiter_section1:hover h1 {
+  font-size: 2.5rem;
+}
+
 @media (min-width: 600px){
   .recruiter_section1 {    
     width: 60%;

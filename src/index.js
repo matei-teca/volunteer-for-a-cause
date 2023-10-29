@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import "./index.css";
 import { Provider } from "react-redux";
 import { createStore } from "redux";    
 import allReducer from "./redux/reducers";
@@ -10,6 +9,7 @@ import ContactPage from "./pages/contact/contactPage";
 import ErrorPage from "./pages/error/errorPage";
 import AboutPage from "./pages/about/aboutPage";
 import Layout from "./pages/layout/layout";
+import "./index.css";
 
 const router = createBrowserRouter([
   {
@@ -35,7 +35,7 @@ const router = createBrowserRouter([
 
 const store = createStore(
   allReducer,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

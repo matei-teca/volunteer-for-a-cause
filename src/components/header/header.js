@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import logoSrc from "../../img/un_logo.png";
+import logoSrc from "../../img/un_logo3.png";
 import "./header.css";
 
 function Header() {
@@ -82,16 +82,13 @@ function Header() {
           </video> */}
         </div>
 
-        <img
-          src={logoSrc}
-          alt="Logo: heart-shaped Ukraine flag and 'peace pigeon' in a white circle"
-          id="logoId"
-          className="logo"
-        ></img>
-        <div className="header_quote">
+        <div className="header_logo_container">
+          <img src={logoSrc} id="logoId" className="header_logo"></img>
+        </div>
+        {/* <div className="header_quote">
           <div>"All human beings are born free and equal in dignity and rights.</div>
           <div>They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood."</div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

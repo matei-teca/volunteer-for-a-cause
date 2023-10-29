@@ -14,10 +14,6 @@
   transition: opacity 1s ease-in 0.6s;
 }
 
-.landingV_containerA:hover .section1 h1 {
-  font-size: 2.5rem;
-}
-
 .section1 {
   color: white;
   display: flex;
@@ -46,6 +42,10 @@
 .section1_text_after {
   color: black;
   transition: color 6s;
+}
+
+.section1:hover h1 {
+  font-size: 2.5rem;
 }
 
 .title2 {
