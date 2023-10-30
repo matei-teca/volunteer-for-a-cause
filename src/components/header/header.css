@@ -13,8 +13,22 @@
   height: 10rem; 
   padding: 0.5%;
   /* background-size: 50%; */
-  /* border: 3px solid #edc339; */
+  border: 1px solid rgba(237,195,57,0);
   border-radius: 5% 5% 5% 5%;
+  transition: 1s;
+
+}
+
+.header_containerB:hover { 
+  background-color: rgba(0, 0, 0, 1);
+  border: 1px solid rgba(237,195,57,1);
+  transition: 0s;
+}
+
+.header_containerB:hover .header_logo_container { 
+  background-color: rgba(255,255,255,0.6);
+  border: 1px solid rgba(237,195,57,1);
+  transition: 0s;
 }
 
 .header_logo_container {
@@ -26,16 +40,8 @@
   width: 10rem;
   height: 7rem;
   border-radius: 100px;
-  border: solid 0px #edc339;
-  transition: background-color 1s;
-
-  /* z-index: 50; */
-}
-
-.header_logo_container:hover {
-  /* border: solid 1px #edc339; */
-  background-color: rgba(237, 195, 57, 1);
-  transition: background-color 1s;
+  border: 1px solid rgba(237,195,57,0);
+  transition: 1s;
 }
 
 .header_logo {
