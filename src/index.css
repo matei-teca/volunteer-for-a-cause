@@ -13,11 +13,6 @@ body {
   background-position: center;
 }
 
-h1 {
+h1, h6 {
   font-weight: 300;
-}
-
-.form_input {
-  margin-top: 7%;
-  padding: 5%;
 }

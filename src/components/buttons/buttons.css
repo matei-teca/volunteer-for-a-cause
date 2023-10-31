@@ -9,11 +9,9 @@
   margin-top: 5%;
 }
 
-.logInBttn, .logOut_bttn {
+.logInBttn, .logOut_bttn, .form_step2_button {
   background-color: rgba(237, 195, 57, 0.9);
   color: #ffffff;
-  display: inline-block;
-  text-align: center;
   width: 100%;
   height: 4.5rem;
   padding: 0.6rem 1.2rem;
@@ -30,7 +28,13 @@
   margin-top: 3rem;
 }
 
-.logInBttn:hover, .logOut_bttn:hover {
+.form_step2_button {
+  width: 60%;
+  margin-block: 7%;
+}
+
+
+.logInBttn:hover, .logOut_bttn:hover, .form_step2_button:hover {
   background-color: #4095c6;
   border: 1px solid #edc339;
 }

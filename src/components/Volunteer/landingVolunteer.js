@@ -7,14 +7,15 @@ import LogOutButton from "../buttons/logOutButton";
 import "./Volunteer.css";
 
 function LandingVolunteer() {
+  const [formStepNbr, setformStepNbr] = useState(1);
   const [name, setName] = useState("");
-  const [contact, setContact] = useState("");
-  const [time, setTime] = useState("");
+  const [personalObjective, setPersonalObjective] = useState("");
+  const [phoneNbr, setPhoneNbr] = useState("");
+  const [email, setEmail] = useState("");
 
   const dispatch = useDispatch();
 
   function changeTextColor() {
-
     const elements = document.querySelectorAll(".section1_text");
 
     elements.forEach((element) => {
@@ -24,7 +25,6 @@ function LandingVolunteer() {
   }
 
   function rechangeTextColor() {
-
     const elements = document.querySelectorAll(".section1_text_after");
 
     elements.forEach((element) => {
@@ -35,6 +35,7 @@ function LandingVolunteer() {
 
   const unfocus_title2 = () => {
     document.getElementById("title2").style.border = "1px solid black";
+    // document.getElementById("title2").style.color = "black";
   };
 
   const scrollToSection = () => {
@@ -113,49 +114,119 @@ function LandingVolunteer() {
         </section>
 
         <section id="formV" className="formV" onMouseEnter={unfocus_title2}>
-          <form onSubmit={() => alert("your answer was succesfully submited")}>
-            <label className="form_section">
-              Enter your name:
-              <input
-                className="form_input"
-                type="text"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
-            </label>
+          <div className="step_nbr">{formStepNbr}</div>
 
-            <label className="form_section">
-              Phone / email:
-              <input
-                className="form_input"
-                type="text"
-                value={contact}
-                onChange={(e) => setContact(e.target.value)}
-              />
-            </label>
+          {formStepNbr == 1 ? (
+            <div className="form_step">
+              <label className="form_section">
+                What's your name?
+                <input
+                  className="form_input"
+                  type="text"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                />
+              </label>
 
-            <label className="form_section">
-              Time when available
-              <input
-                className="form_input"
-                type="text"
-                value={time}
-                onChange={(e) => setTime(e.target.value)}
-              />
-            </label>
-
-            <div className="submitBttn_container">
-              <input
-                className="submitBttn"
-                type="submit"
-                value="Submit"
-              ></input>
+              <label className="form_section">
+                Why would you like <br />
+                to volunteer?
+                <select
+                  value={personalObjective}
+                  onChange={(e) => setPersonalObjective(e.target.value)}
+                >
+                  <option value=""></option>
+                  <option value="Option 1">To help out / To contribute</option>
+                  <option value="Option 2">For my portfolio</option>
+                  <option value="Option 3">For working experience</option>
+                </select>
+              </label>
             </div>
-          </form>
+          ) : formStepNbr == 2 ? (
+            <div className="form_step2">
+              <button className="form_step2_button">Upload your CV</button>
+              <div style={{ fontSize: "1rem" }}>OR</div>
+              <button className="form_step2_button">
+                Answer some questions
+              </button>
+            </div>
+          ) : formStepNbr == 3 ? (
+            <div className="form_step3">
+              <div className="form_step3_title">Where can we contact you?</div>
+              <label className="form_section">
+                Phone number
+                <input
+                  className="form_input"
+                  type="text"
+                  value={name}
+                  onChange={(e) => setPhoneNbr(e.target.value)}
+                />
+              </label>
+
+              <label className="form_section">
+                Email address
+                <input
+                  className="form_input"
+                  type="text"
+                  value={name}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </label>
+
+              {/* <div className="form_section">
+                <input
+                  className="nextBttn"
+                  type="submit"
+                  value="Next"
+                ></input>
+              </div> */}
+            </div>
+          ) : (
+            ""
+          )}
+
+          <div className="nextBttn_container">
+            {formStepNbr != 1 ? (
+              <div
+                className="nextBttn"
+                onClick={() => {
+                  setformStepNbr(formStepNbr - 1);
+                }}
+              >
+                Prev
+              </div>
+            ) : (
+              <div className="nextBttn hidden">Prev</div>
+            )}
+
+            {formStepNbr < 3 ? (
+              <div
+                className="nextBttn"
+                onClick={() => {
+                  setformStepNbr(formStepNbr + 1);
+                }}
+              >
+                Next
+              </div>
+            ) : (
+                <div
+                  className="submitBttn"
+                  type="submit"
+                >Submit</div>
+            )}
+          </div>
         </section>
       </div>
     </>
   );
 }
+
+// <div className="submitBttn_container">
+// <input
+//   className="submitBttn"
+//   type="submit"
+//   value="Next"
+// ></input>
+// </div>
 
 export default LandingVolunteer;
