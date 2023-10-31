@@ -204,10 +204,16 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 100%;
+  height: 70%;
   width: 100%;
   padding-top: 3rem;
     transition: 1s;
+}
+
+.file_input_container {
+  display: flex;
+  margin-block: 7%;
+  width: 60%;
 }
 
 .form_step3 {

@@ -5,11 +5,13 @@ import { landingVolunteer } from "../../redux/actions";
 import { scroller } from "react-scroll";
 import LogOutButton from "../buttons/logOutButton";
 import "./Volunteer.css";
+import FileInput from "./fileInput/fileInput";
 
 function LandingVolunteer() {
   const [formStepNbr, setformStepNbr] = useState(1);
   const [name, setName] = useState("");
   const [personalObjective, setPersonalObjective] = useState("");
+  const [selectedFile, setSelectedFile] = useState(null);
   const [phoneNbr, setPhoneNbr] = useState("");
   const [email, setEmail] = useState("");
 
@@ -51,6 +53,10 @@ function LandingVolunteer() {
   const focus_formV = () => {
     document.getElementById("formV").style.border = "1px solid #edc339";
     unfocus_title2();
+  };
+
+  const handleFileSelect = (file) => {
+    setSelectedFile(file);
   };
 
   return (
@@ -117,7 +123,7 @@ function LandingVolunteer() {
           <div className="step_nbr">{formStepNbr}</div>
 
           {formStepNbr == 1 ? (
-            <div className="form_step">
+            <div className="form_step1">
               <label className="form_section">
                 What's your name?
                 <input
@@ -144,7 +150,11 @@ function LandingVolunteer() {
             </div>
           ) : formStepNbr == 2 ? (
             <div className="form_step2">
-              <button className="form_step2_button">Upload your CV</button>
+              {/* <button className="form_step2_button">Upload your CV</button> */}
+              <div className="file_input_container">
+                <FileInput onFileSelect={handleFileSelect} />
+                {selectedFile && <p>Selected file: {selectedFile.name}</p>}
+              </div>
               <div style={{ fontSize: "1rem" }}>OR</div>
               <button className="form_step2_button">
                 Answer some questions
@@ -209,10 +219,9 @@ function LandingVolunteer() {
                 Next
               </div>
             ) : (
-                <div
-                  className="submitBttn"
-                  type="submit"
-                >Submit</div>
+              <div className="submitBttn" type="submit">
+                Submit
+              </div>
             )}
           </div>
         </section>

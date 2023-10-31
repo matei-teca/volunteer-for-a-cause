@@ -1,0 +1,36 @@
+.file-input {
+    display: none; /* Hide the default file input */
+  }
+  
+  .custom-file-input {
+    background-color: rgba(237, 195, 57, 0.9);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 4.5rem;
+    padding: 0.2rem 1.2rem;
+    border-radius: 100px;
+    border: 1px solid #4095c6;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s;
+  }
+  
+  .custom-file-input:hover {
+    background-color: #2980b9;
+  }
+  
+  .custom-file-label {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  
+  /* Optional: Style the selected file name display */
+  .selected-file {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
