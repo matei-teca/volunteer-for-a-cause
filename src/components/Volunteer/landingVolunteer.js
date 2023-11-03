@@ -150,7 +150,7 @@ function LandingVolunteer() {
             </div>
           ) : formStepNbr == 2 ? (
             <div className="form_step2">
-              {/* <button className="form_step2_button">Upload your CV</button> */}
+
               <div className="file_input_container">
                 <FileInput onFileSelect={handleFileSelect} />
                 {selectedFile && <p>Selected file: {selectedFile.name}</p>}
@@ -183,13 +183,6 @@ function LandingVolunteer() {
                 />
               </label>
 
-              {/* <div className="form_section">
-                <input
-                  className="nextBttn"
-                  type="submit"
-                  value="Next"
-                ></input>
-              </div> */}
             </div>
           ) : (
             ""
@@ -219,7 +212,7 @@ function LandingVolunteer() {
                 Next
               </div>
             ) : (
-              <div className="submitBttn" type="submit">
+              <div className="submitBttn">
                 Submit
               </div>
             )}
@@ -229,13 +222,5 @@ function LandingVolunteer() {
     </>
   );
 }
-
-// <div className="submitBttn_container">
-// <input
-//   className="submitBttn"
-//   type="submit"
-//   value="Next"
-// ></input>
-// </div>
 
 export default LandingVolunteer;
