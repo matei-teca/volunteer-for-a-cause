@@ -7,13 +7,15 @@ import LogOutButton from "../buttons/logOutButton";
 import "./Volunteer.css";
 import FileInput from "./fileInput/fileInput";
 
+
+
 function LandingVolunteer() {
   const [formStepNbr, setformStepNbr] = useState(1);
   const [name, setName] = useState("");
   const [personalObjective, setPersonalObjective] = useState("");
-  const [selectedFile, setSelectedFile] = useState(null);
   const [phoneNbr, setPhoneNbr] = useState("");
   const [email, setEmail] = useState("");
+  const [selectedFile, setSelectedFile] = useState(null);
 
   const dispatch = useDispatch();
 
@@ -57,6 +59,28 @@ function LandingVolunteer() {
 
   const handleFileSelect = (file) => {
     setSelectedFile(file);
+  };
+
+  const handleUpload = () => {
+    // const formData = new FormData();
+    // formData.append('name', name);
+    // formData.append('personalObjective', personalObjective);
+    // formData.append('phoneNbr', phoneNbr);
+    // formData.append('email', email);
+    // formData.append('file', selectedFile);
+
+    // fetch('/upload', {
+    //   method: 'POST',
+    //   body: formData,
+    // })
+    //   .then((response) => {
+    //     console.log(response);
+    //   })
+    //   .catch((error) => {
+    //     console.log(error);
+    //   });
+
+    console.log(selectedFile);
   };
 
   return (
@@ -212,7 +236,7 @@ function LandingVolunteer() {
                 Next
               </div>
             ) : (
-              <div className="submitBttn">
+              <div className="submitBttn" onClick={handleUpload}>
                 Submit
               </div>
             )}
