@@ -7,8 +7,6 @@ import LogOutButton from "../buttons/logOutButton";
 import "./Volunteer.css";
 import FileInput from "./fileInput/fileInput";
 
-
-
 function LandingVolunteer() {
   const [formStepNbr, setformStepNbr] = useState(1);
   const [name, setName] = useState("");
@@ -63,24 +61,24 @@ function LandingVolunteer() {
 
   const handleUpload = () => {
     // const formData = new FormData();
-    // formData.append('name', name);
-    // formData.append('personalObjective', personalObjective);
-    // formData.append('phoneNbr', phoneNbr);
-    // formData.append('email', email);
-    // formData.append('file', selectedFile);
+    // formData.append("name", name);
+    // formData.append("personalObjective", personalObjective);
+    // formData.append("phoneNbr", phoneNbr);
+    // formData.append("email", email);
+    // formData.append("file", selectedFile);
 
-    // fetch('/upload', {
-    //   method: 'POST',
-    //   body: formData,
-    // })
-    //   .then((response) => {
-    //     console.log(response);
-    //   })
-    //   .catch((error) => {
-    //     console.log(error);
-    //   });
+    fetch("http://localhost:8080/upload", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ title: "React POST Request Example" }),
+    })
+    .then((response) => {
+      console.log(response);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
 
-    console.log(selectedFile);
   };
 
   return (
@@ -174,7 +172,6 @@ function LandingVolunteer() {
             </div>
           ) : formStepNbr == 2 ? (
             <div className="form_step2">
-
               <div className="file_input_container">
                 <FileInput onFileSelect={handleFileSelect} />
                 {selectedFile && <p>Selected file: {selectedFile.name}</p>}
@@ -206,7 +203,6 @@ function LandingVolunteer() {
                   onChange={(e) => setEmail(e.target.value)}
                 />
               </label>
-
             </div>
           ) : (
             ""
