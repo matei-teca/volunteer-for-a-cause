@@ -4,13 +4,13 @@
 
 .header_containerB {
   /* background-color: #193454; */
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   background-blend-mode: darken;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 10rem; 
+  height: 4rem; 
   padding: 0.5%;
   /* background-size: 50%; */
   border: 1px solid rgba(237,195,57,0);
@@ -22,13 +22,13 @@
 .header_containerB:hover { 
   background-color: rgba(0, 0, 0, 1);
   border: 1px solid rgba(237,195,57,1);
-  transition: 0s;
+  transition: 1s;
 }
 
 .header_containerB:hover .header_logo_container { 
-  background-color: rgba(255,255,255,0.6);
-  border: 1px solid rgba(237,195,57,1);
-  transition: 0s;
+  background-color: rgba(255,255,255,0.4);
+  border: 1px solid rgba(237,195,57,0.4);
+  transition: 1s;
 }
 
 .header_logo_container {
@@ -37,15 +37,15 @@
   justify-content: center;
   align-items: center;
   left: 3%; 
-  width: 10rem;
-  height: 7rem;
+  width: 6rem;
+  height: 4rem;
   border-radius: 100px;
   border: 1px solid rgba(237,195,57,0);
   transition: 1s;
 }
 
 .header_logo {
-  width: 6rem
+  width: 3.5rem
 }
 
 /* .header_quote {

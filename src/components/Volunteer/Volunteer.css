@@ -256,12 +256,13 @@
   }
 
   .title2 h1 {
-    opacity: 0;
+    opacity: 1;
   }
 
   .title2:hover {
     border: 1px solid #edc339 !important;
   }
+
 
   .formV {    
     width: 25%;
@@ -291,6 +292,10 @@
     position: absolute;
     margin-top: -10%;
     margin-left: -85%;
+  }
+
+    .formV:hover + .title2 {
+    color: white !important;
   }
 
 }
