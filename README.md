@@ -1,3 +1,3 @@
 # Welcome
 
-This project represents a platform for recruting volunteers by organisations of humanitarian causes.
+This project represents a platform for recruiting volunteers by organizations of humanitarian causes.
